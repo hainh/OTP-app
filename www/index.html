@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+		<!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+		<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+		<!-- Good default declaration:
+		* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+		* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+		* Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+			* Enable inline JS: add 'unsafe-inline' to default-src
+			* Enable eval(): add 'unsafe-eval' to default-src
+		* Create your own at http://cspisawesome.com
+		-->
+		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+		
+		<link rel="stylesheet" type="text/css" href="css/google-font.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<title>OTP</title>
+	</head>
+	<body>
+		<div class="app bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay" style="display: none;">
+			<header class="bmd-layout-header">
+				<div class="navbar navbar-light">
+					<div class="btn-group">
+						<button class="btn bmd-btn-fab bmd-btn-fab-sm dropdown-toggle page-control" type="button" id="ex3" page="#page2" aria-haspopup="true" aria-expanded="false">
+						<i class="material-icons">add</i>
+						</button>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="nav-item">OTP</li>
+					</ul>
+				</div>
+			</header>
+			<main class="bmd-layout-content">
+				<div class="container-fluid">
+					<div class="page" id="page1">
+						<div class="row" id="otps">
+							<div class="col-md-12">
+								<div class="row otp-card-container">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page" id="page2">
+						<div class="row">
+							<div class="col-md-12">
+								<form class="form-group">
+									<label for="userOtpCode" class="bmd-label-floating">Mã xác nhận</label>
+									<input type="text" required class="form-control" id="userOtpCode" style="text-transform:uppercase;" />
+									<button type="reset" class="close reset-icon" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<span class="form-text text-muted small">Bạn cần lấy mã xác nhận trong game, phần cài đặt bảo mật, để điền vào đây.</span>
+								</form>
+								<button class="page-control btn btn-outline-secondary" page="#page1">&lt;Quay lại</button>
+								<button type="button" class="btn btn-outline-info btn-outline-info-custom-black float-right" id="sendBtn">Gửi mã</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="loader">
+			<div class="loader-inner">
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+				<div class="loader-line-wrap">
+					<div class="loader-line"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/popper.js"></script>
+		<script type="text/javascript" src="js/bootstrap-material-design.js"></script>
+		<script type="text/javascript" src="js/sha.js"></script>
+		<script type="text/javascript" src="js/Photon.js"></script>
+		<script type="text/javascript" src="js/sweetalert.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() { $('body').bootstrapMaterialDesign(); });
+			app.initialize();
+			if (typeof(cordova) === 'undefined') {
+				app.onDeviceReady();
+			}
+		</script>
+	</body>
+</html>
