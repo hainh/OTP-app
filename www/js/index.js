@@ -1,4 +1,4 @@
-
+var serverAddress = localStorage.serverAddress || 'gamevipdt.tk';
 var app = {
 	// Application Constructor
 	initialize: function() {
@@ -29,7 +29,7 @@ var app = {
 		$('#sendBtn').on('click', function () {
 			var userOtpCode = $('#userOtpCode').val();
 			if (userOtpCode) {
-				var peer = initPhoton('localhost', userOtpCode.toUpperCase())
+				var peer = initPhoton(serverAddress, userOtpCode.toUpperCase())
 				peer.connect();
 				$('.loader').fadeIn(100);
 			} else {
@@ -66,6 +66,34 @@ var app = {
 
 		$('.reset-icon').click(function () {
 			$('#userOtpCode').focus();
+		});
+
+		$('.navbar-nav .nav-item').click(function () {
+			if ($('#page2').is(':hidden')) return;
+
+			swal('Manually Set Server Address', {
+				content: 'input',
+				icon: 'error',
+				button: {
+					text: 'OK',
+					className: 'btn btn-info'
+				}
+			})
+			.then((value) => {
+				if (!value) return;
+				if (!value.match(/^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$/i)) {
+					swal({
+						text: 'Invalid server address!',
+						button: {
+							text: 'OK',
+							className: 'btn btn-info'
+						},
+						icon: 'warning'
+					});
+					return;
+				}
+				serverAddress = localStorage.serverAddress = value;
+			});
 		})
 	},
 	startOtp: function() {
@@ -230,7 +258,7 @@ var initPhoton = (function() {
 		}
 
 		userOtp = data;
-		peer = new Photon.PhotonPeer(['Json'], 'ws://' + hostname + ':2052');
+		peer = new Photon.PhotonPeer(['Json'], 'wss://' + hostname + ':2053');
 
 		peer.addPeerStatusListener(Photon.PhotonPeer.StatusCodes.connect, onConnect);
 		peer.addPeerStatusListener(Photon.PhotonPeer.StatusCodes.disconnect, onConnectClosed);
@@ -253,6 +281,8 @@ var initPhoton = (function() {
 						button: {
 							className: 'btn btn-success'
 						}
+					}).then(() => {
+						$('.page-control[page="#page1"]').click(); // back to #page1
 					});
 				} else {
 					swal({
@@ -295,7 +325,7 @@ var initPhoton = (function() {
 		}
 		swal({
 			title: 'Lỗi mạng',
-			text: 'Không thể kết nối tới server game, vui lòng kiểm tra lại đường truyền của bạn.',
+			text: `Không thể kết nối tới server game (${serverAddress}), vui lòng kiểm tra lại đường truyền của bạn.`,
 			icon: 'warning',
 			button: {
 				className: 'btn btn-info',
