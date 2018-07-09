@@ -1,4 +1,6 @@
 var serverAddress = localStorage.serverAddress || 'gamevipdt.tk';
+var domainRegex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$/i;
+var ipRegex = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
 var app = {
 	// Application Constructor
 	initialize: function() {
@@ -81,7 +83,8 @@ var app = {
 			})
 			.then((value) => {
 				if (!value) return;
-				if (!value.match(/^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$/i)) {
+				if (!value.match(domainRegex)
+					&& !value.match(ipRegex)) {
 					swal({
 						text: 'Invalid server address!',
 						button: {
@@ -258,7 +261,7 @@ var initPhoton = (function() {
 		}
 
 		userOtp = data;
-		peer = new Photon.PhotonPeer(['Json'], 'wss://' + hostname + ':2053');
+		peer = new Photon.PhotonPeer(['Json'], 'ws://' + hostname + ':2052');
 
 		peer.addPeerStatusListener(Photon.PhotonPeer.StatusCodes.connect, onConnect);
 		peer.addPeerStatusListener(Photon.PhotonPeer.StatusCodes.disconnect, onConnectClosed);
