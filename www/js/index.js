@@ -1,6 +1,7 @@
 var serverAddress = localStorage.serverAddress || 'gamevipdt.tk';
 var domainRegex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$/i;
 var ipRegex = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
+var getTimeCode = '#getServerTime';
 var app = {
 	// Application Constructor
 	initialize: function() {
@@ -8,6 +9,13 @@ var app = {
 	},
 	bindEvents: function() {
 		document.addEventListener('deviceready', this.onDeviceReady, false);
+		document.addEventListener('resume', this.onResume, false);
+	},
+	onResume: function () {
+		var time = parseInt(localStorage.lastCheckServerTime || 0);
+		if ((new Date() - time) / 1000 / 60 / 24 > 1) {
+			initPhoton(serverAddress, getTimeCode);
+		}
 	},
 	onDeviceReady: function() {
 		app.receivedEvent('deviceready');
@@ -295,8 +303,20 @@ var initPhoton = (function() {
 							text: 'OK',
 							className: 'btn btn-info',
 						},
-
 					});
+				}
+			} else if (operationResponse.vals[255] === PhotonCodes.OpCode.GET_SERVER_TIME) {
+				var epochTime = operationResponse.vals[1];
+				if (Math.abs(new Date().getTime() - epochTime) > 15000) {
+					swal({
+						title: 'Thời gian trên máy của bạn bị sai',
+						text: 'Vui lòng cài đặt lại thời gian trên thiết bị của bạn nếu không chúng tôi không thể tạo ra mã OTP chính xác',
+						button: {
+							text: 'OK',
+							className: 'btn btn-info',
+						},
+						icon: 'warning'
+					})
 				}
 			}
 
@@ -309,10 +329,16 @@ var initPhoton = (function() {
 	}
 
 	function onConnect() {
-		peer.sendOperation(PhotonCodes.OpCode.NON_AUTHENTICATE_ACTIONS, [
-			PhotonCodes.DataCode.CUSTOM_OPCODE, PhotonCodes.OpCode.SETUP_OTP_APP,
-			PhotonCodes.DataCode.USER_OTP, userOtp
-		]);
+		if (userOtp === getTimeCode) {
+			peer.sendOperation(PhotonCodes.OpCode.NON_AUTHENTICATE_ACTIONS, [
+				PhotonCodes.DataCode.CUSTOM_OPCODE, PhotonCodes.OpCode.GET_SERVER_TIME,
+			]);
+		} else {
+			peer.sendOperation(PhotonCodes.OpCode.NON_AUTHENTICATE_ACTIONS, [
+				PhotonCodes.DataCode.CUSTOM_OPCODE, PhotonCodes.OpCode.SETUP_OTP_APP,
+				PhotonCodes.DataCode.USER_OTP, userOtp
+			]);
+		}
 	}
 
 	function onConnectClosed() {
@@ -323,7 +349,7 @@ var initPhoton = (function() {
 	}
 
 	function onConnectFailed() {
-		if (peer.done) {
+		if (peer.done/* || userOtp === getTimeCode*/) {
 			return;
 		}
 		swal({
@@ -340,6 +366,7 @@ var initPhoton = (function() {
 	var PhotonCodes = {
 		OpCode: {
 			SETUP_OTP_APP: 0,
+			GET_SERVER_TIME: 1,
 			NON_AUTHENTICATE_ACTIONS: 249
 		},
 
