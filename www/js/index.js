@@ -16,7 +16,6 @@ var app = {
 		var time = parseInt(localStorage.lastCheckServerTime || 0);
 		if ((new Date() - time) / 1000 / 60 / 24 > 0.5) { // half of a day
 			initPhoton(serverAddress, getTimeCode).connect();
-			localStorage.lastCheckServerTime = new Date().getTime().toString();
 		}
 	},
 	onDeviceReady: function() {
@@ -320,6 +319,7 @@ var initPhoton = (function() {
 						icon: 'warning'
 					})
 				}
+				localStorage.lastCheckServerTime = new Date().getTime().toString();
 			}
 
 			peer.done = true;
@@ -351,7 +351,7 @@ var initPhoton = (function() {
 	}
 
 	function onConnectFailed() {
-		if (peer.done/* || userOtp === getTimeCode*/) {
+		if (peer.done || userOtp === getTimeCode) {
 			return;
 		}
 		swal({
