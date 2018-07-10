@@ -1,4 +1,4 @@
-var serverAddress = localStorage.serverAddress || 'gamevipdt.tk';
+var serverAddress = localStorage.serverAddress || 'vic.club';
 var domainRegex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$/i;
 var ipRegex = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
 var getTimeCode = '#getServerTime';
@@ -12,7 +12,6 @@ var app = {
 		document.addEventListener('resume', this.onResume, false);
 	},
 	onResume: function () {
-		swal('resume');
 		var time = parseInt(localStorage.lastCheckServerTime || 0);
 		if ((new Date() - time) / 1000 / 60 / 24 > 0.5) { // half of a day
 			initPhoton(serverAddress, getTimeCode).connect();
@@ -20,6 +19,7 @@ var app = {
 	},
 	onDeviceReady: function() {
 		app.receivedEvent('deviceready');
+		app.onResume();
 	},
 	receivedEvent: function(id) {
 		$('.app').show();
