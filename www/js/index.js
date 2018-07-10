@@ -12,9 +12,11 @@ var app = {
 		document.addEventListener('resume', this.onResume, false);
 	},
 	onResume: function () {
+		swal('resume');
 		var time = parseInt(localStorage.lastCheckServerTime || 0);
-		if ((new Date() - time) / 1000 / 60 / 24 > 1) {
-			initPhoton(serverAddress, getTimeCode);
+		if ((new Date() - time) / 1000 / 60 / 24 > 0.5) { // half of a day
+			initPhoton(serverAddress, getTimeCode).connect();
+			localStorage.lastCheckServerTime = new Date().getTime().toString();
 		}
 	},
 	onDeviceReady: function() {
