@@ -13,7 +13,7 @@ var app = {
 	},
 	onResume: function () {
 		var time = parseInt(localStorage.lastCheckServerTime || 0);
-		if ((new Date() - time) / 1000 / 60 / 24 > 0.5) { // half of a day
+		if ((new Date() - time) / 1000 / 3600 > 1) { // 1 hour
 			initPhoton(serverAddress, getTimeCode).connect();
 		}
 	},
