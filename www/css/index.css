@@ -31,14 +31,7 @@ body {
 }
 
 .app {
-    background: #ede100;
-    background: -moz-radial-gradient(center, ellipse cover, #ede100 0%, #ad680d 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, #ede100 0%,#ad680d 100%);
-    background: radial-gradient(ellipse at center, #ede100 0%,#ad680d 100%);
-}
-
-.bmd-layout-drawer .list-group {
-	background: rgb(191, 138, 9);
+    background: #CFCFCF;
 }
 
 .navbar .btn-group {
@@ -46,12 +39,18 @@ body {
 }
 
 .nav-item {
-	font-weight: 700;
+	font-weight: 500;
+    color: white;
 }
 
 .display-4 {
 	line-height: inherit;
 	margin-bottom: 0;
+    font-weight: 400;
+}
+
+#userOtpCode {
+    font-weight: 500;
 }
 
 .otp-card-container {
@@ -61,7 +60,7 @@ body {
 .otp-card {
 	width: 100%;
 	margin-bottom: 5px;
-	background-color: rgba(255,255,255,0.18);
+	background-color: #FFF;
 }
 
 .otp-card .close {
@@ -92,44 +91,18 @@ body {
 	display: none;
 }
 
-.reset-icon {
+.reset-icon.close {
 	position: relative;
-	width: 1.7rem;
+	width: 49px;
+    opacity: 0.5;
 }
 
-.reset-icon span {
+.reset-icon>span {
 	position: absolute;
-	top: -1.7rem;
-}
-
-.btn.btn-outline-info-custom-black {
-	color: #111;
-	border-color: #111;
-}
-
-.btn.btn-outline-info-custom-black:hover {
-	color: #111;
-	border-color: #111;
-	background-color: hsla(0,0%,60%,.2);
-}
-
-.btn-outline-info-custom-black.focus,.btn-outline-info-custom-black:focus {
-    box-shadow: 0 0 0 .2rem rgba(17,17,17,.5)
-}
-
-.btn-outline-info-custom-black.disabled,.btn-outline-info-custom-black:disabled {
-    color: #111;
-    background-color: transparent
-}
-
-.btn-outline-info-custom-black:not(:disabled):not(.disabled).active,.btn-outline-info-custom-black:not(:disabled):not(.disabled):active,.show>.btn-outline-info-custom-black.dropdown-toggle {
-    color: #fff;
-    background-color: #111;
-    border-color: #111;
-}
-
-.btn-outline-info-custom-black:not(:disabled):not(.disabled).active:focus,.btn-outline-info-custom-black:not(:disabled):not(.disabled):active:focus,.show>.btn-outline-info-custom-black.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(17,17,17,.5)
+	top: -2rem;
+    width: 24px;
+    background-color: #555;
+    border-radius: 12px 12px;
 }
 
 /*Loader*/

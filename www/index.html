@@ -18,21 +18,21 @@
 		<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 		
 		<link rel="stylesheet" type="text/css" href="css/google-font.css" />
-		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<title>OTP</title>
 	</head>
 	<body>
 		<div class="app bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay" style="display: none;">
-			<header class="bmd-layout-header">
+			<header class="bmd-layout-header bg-purple">
 				<div class="navbar navbar-light">
 					<div class="btn-group">
-						<button class="btn bmd-btn-fab bmd-btn-fab-sm dropdown-toggle page-control" type="button" id="ex3" page="#page2" aria-haspopup="true" aria-expanded="false">
+						<button class="btn btn-dark-purple bmd-btn-fab bmd-btn-fab-sm dropdown-toggle page-control" type="button" id="ex3" page="#page2" aria-haspopup="true" aria-expanded="false">
 						<i class="material-icons">add</i>
 						</button>
 					</div>
 					<ul class="nav navbar-nav">
-						<li class="nav-item">OTP</li>
+						<li class="nav-item">VIC OTP</li>
 					</ul>
 				</div>
 			</header>
@@ -41,24 +41,26 @@
 					<div class="page" id="page1">
 						<div class="row" id="otps">
 							<div class="col-md-12">
-								<div class="row otp-card-container">
+								<div class="row otp-card-container" id="otp-card-container">
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="page" id="page2">
-						<div class="row">
-							<div class="col-md-12">
-								<form class="form-group">
-									<label for="userOtpCode" class="bmd-label-floating">Mã xác nhận</label>
-									<input type="text" required class="form-control" id="userOtpCode" style="text-transform:uppercase;" />
-									<button type="reset" class="close reset-icon" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-									<span class="form-text text-muted small">Bạn cần lấy mã xác nhận trong game, phần cài đặt bảo mật, để điền vào đây.</span>
-								</form>
-								<button class="page-control btn btn-outline-secondary" page="#page1">&lt;Quay lại</button>
-								<button type="button" class="btn btn-outline-info btn-outline-info-custom-black float-right" id="sendBtn">Gửi mã</button>
+						<div class="row otp-card-container">
+							<div class="otp-card">
+								<div class="col-md-12">
+									<form class="form-group">
+										<label for="userOtpCode" class="bmd-label-floating" data-text-localize="ConfirmCode"></label>
+										<input type="text" required class="form-control text-light-purple text-uppercase" id="userOtpCode" />
+										<button type="reset" class="close reset-icon" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<span class="form-text text-muted small" data-text-localize="GetCodePrompt"></span>
+									</form>
+									<button class="page-control btn btn-secondary btn-raised" page="#page1" data-text-localize="Back"></button>
+									<button type="button" class="btn btn-light-purple btn-raised float-right" id="sendBtn" data-text-localize="SendCode"></button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -93,6 +95,7 @@
 		<script type="text/javascript" src="js/Photon.js"></script>
 		<script type="text/javascript" src="js/sweetalert.min.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/lang.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() { $('body').bootstrapMaterialDesign(); });
 			app.initialize();

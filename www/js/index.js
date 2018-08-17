@@ -16,12 +16,32 @@ var app = {
 		if ((new Date() - time) / 1000 / 3600 > 1) { // 1 hour
 			initPhoton(serverAddress, getTimeCode).connect();
 		}
+
+		var globalization = navigator.globalization;
+		if (globalization) {
+			globalization.getPreferredLanguage(
+			  	function (language) {
+			  		var lang = language.value.split('-')[0];
+			  		if (lang && lang !== localStorage.language) {
+			  			changeLanguage(lang);
+			  		}
+			  	},
+			  	function () {changeLanguage('en')}
+			);
+		}
 	},
 	onDeviceReady: function() {
+		if (typeof(cordova) !== 'undefined' && cordova.platformId == 'android') {
+		    StatusBar.backgroundColorByHexString("#2f0249");
+		}
 		app.receivedEvent('deviceready');
 		app.onResume();
 	},
 	receivedEvent: function(id) {
+		if (localStorage.language) {
+			changeLanguage(localStorage.language);
+		}
+
 		$('.app').show();
 		this.initPage();
 		this.startOtp();
@@ -45,8 +65,8 @@ var app = {
 				$('.loader').fadeIn(100);
 			} else {
 				swal({
-					title: 'Bạn chưa nhập mã',
-					text: 'Vui lòng đăng nhập vào game, vào phần Cài đặt Bảo mật để lấy mã kích hoạt app OTP',
+					title: langText('NotInputText'),
+					text: langText('GetCodePrompt'),
 					button: {
 						text: 'OK',
 						className: 'btn btn-info',
@@ -136,7 +156,7 @@ var app = {
 		var userExisted = this.findIndexOfAccount(username) >= 0;
 		if (userExisted) {
 			swal({
-				title: `Tài khoản ${username} đã tồn tại`,
+				title: langText('UserExisted').replace('{username}', username),
 				button: {
 					text: 'OK',
 					className: 'btn btn-info',
@@ -161,13 +181,13 @@ var app = {
 		});
 	},
 	appendOtpCard: function(username, key) {
-		$('.otp-card-container').append(
+		$('#otp-card-container').append(
 			`<div class="otp-card" id="otp-card-${username}">
 				<div class="col-md-6">
 					<button type="button" class="close" delete-for="${username}" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h3 class="display-4 otp" id="otp-${username}">${getOtp(key)}</h3>
+					<h3 class="display-4 otp text-light-purple" id="otp-${username}">${getOtp(key)}</h3>
 					<div class="progress">
 						<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
@@ -180,12 +200,12 @@ var app = {
 function onCloseClick() {
 	var deleteFor = $(this).attr('delete-for');
 	swal({
-		title: 'Xóa tài khoản',
-		text: 'Tài khoản này sẽ bị xóa vĩnh viễn và không thể được khôi phục. Nếu bạn thực sự muốn xóa tài khoản này vui lòng nhập lại Tên tài khoản ở đây để xác nhận:',
+		title: langText('DeleteAccount'),
+		text: langText('DeleteAccountConfirm'),
 		content: {
 			element: 'input',
 			attributes: {
-				placeholder: 'Tên tài khoản',
+				placeholder: langText('Username'),
 				type: 'text',
 			}
 		},
@@ -207,7 +227,7 @@ function onCloseClick() {
 			app.saveData();
 			$(`#otp-card-${val}`).remove();
 			swal({
-				title: 'Đã xóa tài khoản thành công.',
+				title: langText('DeleteAccountSuccess'),
 				icon:'success',
 				button: {
 					className: 'btn btn-success'
@@ -288,7 +308,7 @@ var initPhoton = (function() {
 					$(`#otp-card-${playerName} .close`).click(onCloseClick);
 
 					swal({
-						title: 'Đã Thêm tài khoản thành công.',
+						title: langText('AddAccountSuccess'),
 						icon:'success',
 						button: {
 							className: 'btn btn-success'
@@ -298,8 +318,8 @@ var initPhoton = (function() {
 					});
 				} else {
 					swal({
-						title: 'Mã không đúng',
-						text: 'Vui lòng đăng nhập vào game, vào phần Cài đặt Bảo mật để lấy mã kích hoạt app OTP',
+						title: langText('IncorrectCode'),
+						text: langText('GetCodePrompt'),
 						button: {
 							text: 'OK',
 							className: 'btn btn-info',
@@ -310,8 +330,8 @@ var initPhoton = (function() {
 				var epochTime = operationResponse.vals[1];
 				if (Math.abs(new Date().getTime() - epochTime) > 15000) {
 					swal({
-						title: 'Thời gian trên máy của bạn bị sai',
-						text: 'Vui lòng cài đặt lại thời gian trên thiết bị của bạn nếu không chúng tôi không thể tạo ra mã OTP chính xác',
+						title: langText('IncorrectTime'),
+						text: langText('IncorrectTimeMessage'),
 						button: {
 							text: 'OK',
 							className: 'btn btn-info',
@@ -355,8 +375,8 @@ var initPhoton = (function() {
 			return;
 		}
 		swal({
-			title: 'Lỗi mạng',
-			text: `Không thể kết nối tới server game (${serverAddress}), vui lòng kiểm tra lại đường truyền của bạn.`,
+			title: langText('NetworkError'),
+			text: langText('NetworkErrorPromt').replace('{serverAddress}', serverAddress),
 			icon: 'warning',
 			button: {
 				className: 'btn btn-info',
