@@ -1,4 +1,4 @@
-var serverAddress = localStorage.serverAddress || 'vic.club';
+var serverAddress = localStorage.serverAddress || 'zenky.club';
 var domainRegex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$/i;
 var ipRegex = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
 var getTimeCode = '#getServerTime';
@@ -20,19 +20,19 @@ var app = {
 		var globalization = navigator.globalization;
 		if (globalization) {
 			globalization.getPreferredLanguage(
-			  	function (language) {
-			  		var lang = language.value.split('-')[0];
-			  		if (lang && lang !== localStorage.language) {
-			  			changeLanguage(lang);
-			  		}
-			  	},
-			  	function () {changeLanguage('en')}
+				function (language) {
+					var lang = language.value.split('-')[0];
+					if (lang && lang !== localStorage.language) {
+						changeLanguage(lang);
+					}
+				},
+				function () {changeLanguage('en')}
 			);
 		}
 	},
 	onDeviceReady: function() {
 		if (typeof(cordova) !== 'undefined' && cordova.platformId == 'android') {
-		    StatusBar.backgroundColorByHexString("#2f0249");
+			StatusBar.backgroundColorByHexString("#2f0249");
 		}
 		app.receivedEvent('deviceready');
 		app.onResume();
@@ -88,6 +88,13 @@ var app = {
 				$('.page-control[page="#page1"]').show();
 			} else {
 				$('.page-control[page="#page1"]').hide();
+			}
+		});
+
+		$('#userOtpCode').keypress(function(event) {
+			if (event.keyCode == 13) {
+				event.preventDefault();
+				$('#sendBtn').click();
 			}
 		});
 
@@ -187,7 +194,7 @@ var app = {
 					<button type="button" class="close" delete-for="${username}" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h3 class="display-4 otp text-light-purple" id="otp-${username}">${getOtp(key)}</h3>
+					<h3 class="display-4 otp text-light-otpappcolor" id="otp-${username}">${getOtp(key)}</h3>
 					<div class="progress">
 						<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
