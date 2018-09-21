@@ -32,7 +32,7 @@ var app = {
 	},
 	onDeviceReady: function() {
 		if (typeof(cordova) !== 'undefined' && cordova.platformId == 'android') {
-			StatusBar.backgroundColorByHexString("#2f0249");
+			StatusBar.backgroundColorByHexString("#490010");
 		}
 		app.receivedEvent('deviceready');
 		app.onResume();
