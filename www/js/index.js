@@ -6,12 +6,15 @@ var app = {
 	// Application Constructor
 	initialize: function() {
 		this.bindEvents();
+		this.lastUpdateOtp = 0;
+		resetRed();
 	},
 	bindEvents: function() {
 		document.addEventListener('deviceready', this.onDeviceReady, false);
 		document.addEventListener('resume', this.onResume, false);
 	},
 	onResume: function () {
+		resetRed();
 		var time = parseInt(localStorage.lastCheckServerTime || 0);
 		if ((new Date() - time) / 1000 / 3600 > 1) { // 1 hour
 			initPhoton(serverAddress, getTimeCode).connect();
@@ -149,9 +152,9 @@ var app = {
 		$('#otps .close').click(onCloseClick);
 	},
 	updateOtp: function() {
-		var epoch = Math.round(new Date().getTime() / 1000.0);
-		var countDown = 30 - (epoch % 30);
-		if (epoch % 30 == 0) {
+		var epoch = Math.round(new Date().getTime() / 1000);
+		if (epoch % 30 == 0 || epoch - this.lastUpdateOtp > 30) {
+			this.lastUpdateOtp = epoch;
 			for (var i = 0; i < this.data.length; i++) {
 				var account = this.data[i];
 				otp = getOtp(account.key);
@@ -196,7 +199,7 @@ var app = {
 					</button>
 					<h3 class="display-4 otp text-light-otpappcolor" id="otp-${username}">${getOtp(key)}</h3>
 					<div class="progress">
-						<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 					<p class="lead name">${username}</p>
 				</div>
@@ -244,17 +247,46 @@ function onCloseClick() {
 	});
 }
 
-function animateCountdown() {
-	var interval = 30;
+var redIsOn = false;
+const redOnSec = 9;
+const interval = 30;
+function remainSecs () {
 	var now = new Date();
 	var seconds = (interval - 1) - ((now.getSeconds() | 0) + interval) % interval;
-	if (seconds == 29) {
+	return seconds;
+}
+function animateCountdown() {
+	var seconds = remainSecs();
+	if (seconds == interval - 1) {
 		$('.progress-bar').css({transition: 'width 0.166s ease-out', width: '100%'});
 		setTimeout(function () {
-			$('.progress-bar').css({transition: 'width 1s linear', width: (seconds * 100 / interval) + '%'});
+			$('.progress-bar').css({transition: 'width 1s linear, background-color 0.5s linear'});
+			setTimeout(function () {
+				$('.progress-bar').css({width: (seconds * 100 / interval) + '%'});
+			}, 33);
 		}, 166);
 	} else { 
 		$('.progress-bar').css({width: (seconds * 100 / interval) + '%'});
+	}
+
+	if (seconds < redOnSec) {
+		if (!redIsOn) {
+			$('.progress-bar').removeClass('bg-success').addClass('bg-warning');
+			redIsOn = true;
+		}
+	} else {
+		if (redIsOn) {
+			$('.progress-bar').removeClass('bg-warning').addClass('bg-success');
+			redIsOn = false;
+		}
+	}
+}
+
+function resetRed () {
+	if (remainSecs() < redOnSec) {
+		redIsOn = $('.progress-bar').hasClass('bg-warning');
+	} else {
+		redIsOn = $('.progress-bar').hasClass('bg-success');
 	}
 }
 
