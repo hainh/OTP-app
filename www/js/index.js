@@ -43,6 +43,8 @@ var app = {
 	receivedEvent: function(id) {
 		if (localStorage.language) {
 			changeLanguage(localStorage.language);
+		} else {
+			changeLanguage('vi');
 		}
 
 		$('.app').show();

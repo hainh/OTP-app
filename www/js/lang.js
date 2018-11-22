@@ -57,7 +57,7 @@ var languageDesObject = {
 
 function changeLanguage (lang) {
 	localStorage.language = lang;
-	lang = languageDesObject[lang];
+	lang = languageDesObject[lang] || languageDesObject['vi'];
 	$('[data-text-localize]').each(function () {
 		var element = $(this);
 		var textCode = element.attr('data-text-localize');
