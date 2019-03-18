@@ -60,11 +60,23 @@ body {
 .otp-card {
 	width: 100%;
 	margin-bottom: 5px;
-	background-color: #FFF;
+	background-color: #EEE;
+    border-radius: 5px;
 }
 
 .otp-card .close {
 	opacity: 0.025;
+}
+
+.otp-card-confirm {
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #EEE;
+    border-radius: 5px;
+}
+
+.otp-card-confirm .close {
+    opacity: 0.025;
 }
 
 .progress {

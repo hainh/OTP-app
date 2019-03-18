@@ -30,9 +30,9 @@
   --danger: #f44336;
   --light: #f5f5f5;
   --dark: #424242;
-  --otpappcolor: #830A25;
-  --dark-otpappcolor: #490010;
-  --light-otpappcolor: #A40D2E;
+  --otpappcolor: #15305b;
+  --dark-otpappcolor: #00c2ff;
+  --light-otpappcolor: #0088ff;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1176,35 +1176,35 @@ pre {
 .table-otpappcolor,
 .table-otpappcolor > th,
 .table-otpappcolor > td {
-  background-color: #dcbac2; }
+  background-color: #bdc5d1; }
 
 .table-hover .table-otpappcolor:hover {
-  background-color: #d3a9b3; }
+  background-color: #aeb8c7; }
   .table-hover .table-otpappcolor:hover > td,
   .table-hover .table-otpappcolor:hover > th {
-    background-color: #d3a9b3; }
+    background-color: #aeb8c7; }
 
 .table-dark-otpappcolor,
 .table-dark-otpappcolor > th,
 .table-dark-otpappcolor > td {
-  background-color: #ccb8bc; }
+  background-color: #b8eeff; }
 
 .table-hover .table-dark-otpappcolor:hover {
-  background-color: #c1a9ae; }
+  background-color: #9fe8ff; }
   .table-hover .table-dark-otpappcolor:hover > td,
   .table-hover .table-dark-otpappcolor:hover > th {
-    background-color: #c1a9ae; }
+    background-color: #9fe8ff; }
 
 .table-light-otpappcolor,
 .table-light-otpappcolor > th,
 .table-light-otpappcolor > td {
-  background-color: #e6bbc4; }
+  background-color: #b8deff; }
 
 .table-hover .table-light-otpappcolor:hover {
-  background-color: #dfa8b4; }
+  background-color: #9fd2ff; }
   .table-hover .table-light-otpappcolor:hover > td,
   .table-hover .table-light-otpappcolor:hover > th {
-    background-color: #dfa8b4; }
+    background-color: #9fd2ff; }
 
 .table-active,
 .table-active > th,
@@ -1871,75 +1871,75 @@ fieldset:disabled a.custom-file-control::before {
 
 .btn-otpappcolor {
   color: #fff;
-  background-color: #830A25;
-  border-color: #830A25;
+  background-color: #15305b;
+  border-color: #15305b;
   box-shadow: none; }
   .btn-otpappcolor:hover {
     color: #fff;
-    background-color: #5f071b;
-    border-color: #540618; }
+    background-color: #0e203c;
+    border-color: #0b1a32; }
   .btn-otpappcolor:focus, .btn-otpappcolor.focus {
-    box-shadow: none, 0 0 0 0.2rem rgba(131, 10, 37, 0.5); }
+    box-shadow: none, 0 0 0 0.2rem rgba(21, 48, 91, 0.5); }
   .btn-otpappcolor.disabled, .btn-otpappcolor:disabled {
     color: #fff;
-    background-color: #830A25;
-    border-color: #830A25; }
+    background-color: #15305b;
+    border-color: #15305b; }
   .btn-otpappcolor:not(:disabled):not(.disabled):active, .btn-otpappcolor:not(:disabled):not(.disabled).active,
   .show > .btn-otpappcolor.dropdown-toggle {
     color: #fff;
-    background-color: #540618;
-    border-color: #480514; }
+    background-color: #0b1a32;
+    border-color: #091527; }
     .btn-otpappcolor:not(:disabled):not(.disabled):active:focus, .btn-otpappcolor:not(:disabled):not(.disabled).active:focus,
     .show > .btn-otpappcolor.dropdown-toggle:focus {
-      box-shadow: none, 0 0 0 0.2rem rgba(131, 10, 37, 0.5); }
+      box-shadow: none, 0 0 0 0.2rem rgba(21, 48, 91, 0.5); }
 
 .btn-dark-otpappcolor {
   color: #fff;
-  background-color: #490010;
-  border-color: #490010;
+  background-color: #00c2ff;
+  border-color: #00c2ff;
   box-shadow: none; }
   .btn-dark-otpappcolor:hover {
     color: #fff;
-    background-color: #230008;
-    border-color: #160005; }
+    background-color: #00a5d9;
+    border-color: #009bcc; }
   .btn-dark-otpappcolor:focus, .btn-dark-otpappcolor.focus {
-    box-shadow: none, 0 0 0 0.2rem rgba(73, 0, 16, 0.5); }
+    box-shadow: none, 0 0 0 0.2rem rgba(0, 194, 255, 0.5); }
   .btn-dark-otpappcolor.disabled, .btn-dark-otpappcolor:disabled {
     color: #fff;
-    background-color: #490010;
-    border-color: #490010; }
+    background-color: #00c2ff;
+    border-color: #00c2ff; }
   .btn-dark-otpappcolor:not(:disabled):not(.disabled):active, .btn-dark-otpappcolor:not(:disabled):not(.disabled).active,
   .show > .btn-dark-otpappcolor.dropdown-toggle {
     color: #fff;
-    background-color: #160005;
-    border-color: #090002; }
+    background-color: #009bcc;
+    border-color: #0092bf; }
     .btn-dark-otpappcolor:not(:disabled):not(.disabled):active:focus, .btn-dark-otpappcolor:not(:disabled):not(.disabled).active:focus,
     .show > .btn-dark-otpappcolor.dropdown-toggle:focus {
-      box-shadow: none, 0 0 0 0.2rem rgba(73, 0, 16, 0.5); }
+      box-shadow: none, 0 0 0 0.2rem rgba(0, 194, 255, 0.5); }
 
 .btn-light-otpappcolor {
   color: #fff;
-  background-color: #A40D2E;
-  border-color: #A40D2E;
+  background-color: #0088ff;
+  border-color: #0088ff;
   box-shadow: none; }
   .btn-light-otpappcolor:hover {
     color: #fff;
-    background-color: #810a24;
-    border-color: #750921; }
+    background-color: #0074d9;
+    border-color: #006dcc; }
   .btn-light-otpappcolor:focus, .btn-light-otpappcolor.focus {
-    box-shadow: none, 0 0 0 0.2rem rgba(164, 13, 46, 0.5); }
+    box-shadow: none, 0 0 0 0.2rem rgba(0, 136, 255, 0.5); }
   .btn-light-otpappcolor.disabled, .btn-light-otpappcolor:disabled {
     color: #fff;
-    background-color: #A40D2E;
-    border-color: #A40D2E; }
+    background-color: #0088ff;
+    border-color: #0088ff; }
   .btn-light-otpappcolor:not(:disabled):not(.disabled):active, .btn-light-otpappcolor:not(:disabled):not(.disabled).active,
   .show > .btn-light-otpappcolor.dropdown-toggle {
     color: #fff;
-    background-color: #750921;
-    border-color: #69081d; }
+    background-color: #006dcc;
+    border-color: #0066bf; }
     .btn-light-otpappcolor:not(:disabled):not(.disabled):active:focus, .btn-light-otpappcolor:not(:disabled):not(.disabled).active:focus,
     .show > .btn-light-otpappcolor.dropdown-toggle:focus {
-      box-shadow: none, 0 0 0 0.2rem rgba(164, 13, 46, 0.5); }
+      box-shadow: none, 0 0 0 0.2rem rgba(0, 136, 255, 0.5); }
 
 .btn-outline-primary {
   color: #009688;
@@ -2126,73 +2126,73 @@ fieldset:disabled a.custom-file-control::before {
       box-shadow: 0 0 0 0.2rem rgba(66, 66, 66, 0.5); }
 
 .btn-outline-otpappcolor {
-  color: #830A25;
+  color: #15305b;
   background-color: transparent;
   background-image: none;
-  border-color: #830A25; }
+  border-color: #15305b; }
   .btn-outline-otpappcolor:hover {
     color: #fff;
-    background-color: #830A25;
-    border-color: #830A25; }
+    background-color: #15305b;
+    border-color: #15305b; }
   .btn-outline-otpappcolor:focus, .btn-outline-otpappcolor.focus {
-    box-shadow: 0 0 0 0.2rem rgba(131, 10, 37, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(21, 48, 91, 0.5); }
   .btn-outline-otpappcolor.disabled, .btn-outline-otpappcolor:disabled {
-    color: #830A25;
+    color: #15305b;
     background-color: transparent; }
   .btn-outline-otpappcolor:not(:disabled):not(.disabled):active, .btn-outline-otpappcolor:not(:disabled):not(.disabled).active,
   .show > .btn-outline-otpappcolor.dropdown-toggle {
     color: #fff;
-    background-color: #830A25;
-    border-color: #830A25; }
+    background-color: #15305b;
+    border-color: #15305b; }
     .btn-outline-otpappcolor:not(:disabled):not(.disabled):active:focus, .btn-outline-otpappcolor:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-otpappcolor.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(131, 10, 37, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(21, 48, 91, 0.5); }
 
 .btn-outline-dark-otpappcolor {
-  color: #490010;
+  color: #00c2ff;
   background-color: transparent;
   background-image: none;
-  border-color: #490010; }
+  border-color: #00c2ff; }
   .btn-outline-dark-otpappcolor:hover {
     color: #fff;
-    background-color: #490010;
-    border-color: #490010; }
+    background-color: #00c2ff;
+    border-color: #00c2ff; }
   .btn-outline-dark-otpappcolor:focus, .btn-outline-dark-otpappcolor.focus {
-    box-shadow: 0 0 0 0.2rem rgba(73, 0, 16, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(0, 194, 255, 0.5); }
   .btn-outline-dark-otpappcolor.disabled, .btn-outline-dark-otpappcolor:disabled {
-    color: #490010;
+    color: #00c2ff;
     background-color: transparent; }
   .btn-outline-dark-otpappcolor:not(:disabled):not(.disabled):active, .btn-outline-dark-otpappcolor:not(:disabled):not(.disabled).active,
   .show > .btn-outline-dark-otpappcolor.dropdown-toggle {
     color: #fff;
-    background-color: #490010;
-    border-color: #490010; }
+    background-color: #00c2ff;
+    border-color: #00c2ff; }
     .btn-outline-dark-otpappcolor:not(:disabled):not(.disabled):active:focus, .btn-outline-dark-otpappcolor:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-dark-otpappcolor.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(73, 0, 16, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(0, 194, 255, 0.5); }
 
 .btn-outline-light-otpappcolor {
-  color: #A40D2E;
+  color: #0088ff;
   background-color: transparent;
   background-image: none;
-  border-color: #A40D2E; }
+  border-color: #0088ff; }
   .btn-outline-light-otpappcolor:hover {
     color: #fff;
-    background-color: #A40D2E;
-    border-color: #A40D2E; }
+    background-color: #0088ff;
+    border-color: #0088ff; }
   .btn-outline-light-otpappcolor:focus, .btn-outline-light-otpappcolor.focus {
-    box-shadow: 0 0 0 0.2rem rgba(164, 13, 46, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(0, 136, 255, 0.5); }
   .btn-outline-light-otpappcolor.disabled, .btn-outline-light-otpappcolor:disabled {
-    color: #A40D2E;
+    color: #0088ff;
     background-color: transparent; }
   .btn-outline-light-otpappcolor:not(:disabled):not(.disabled):active, .btn-outline-light-otpappcolor:not(:disabled):not(.disabled).active,
   .show > .btn-outline-light-otpappcolor.dropdown-toggle {
     color: #fff;
-    background-color: #A40D2E;
-    border-color: #A40D2E; }
+    background-color: #0088ff;
+    border-color: #0088ff; }
     .btn-outline-light-otpappcolor:not(:disabled):not(.disabled):active:focus, .btn-outline-light-otpappcolor:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-light-otpappcolor.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(164, 13, 46, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(0, 136, 255, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3694,27 +3694,27 @@ input[type="button"].btn-block {
 
 .badge-otpappcolor {
   color: #fff;
-  background-color: #830A25; }
+  background-color: #15305b; }
   .badge-otpappcolor[href]:hover, .badge-otpappcolor[href]:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #540618; }
+    background-color: #0b1a32; }
 
 .badge-dark-otpappcolor {
   color: #fff;
-  background-color: #490010; }
+  background-color: #00c2ff; }
   .badge-dark-otpappcolor[href]:hover, .badge-dark-otpappcolor[href]:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #160005; }
+    background-color: #009bcc; }
 
 .badge-light-otpappcolor {
   color: #fff;
-  background-color: #A40D2E; }
+  background-color: #0088ff; }
   .badge-light-otpappcolor[href]:hover, .badge-light-otpappcolor[href]:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #750921; }
+    background-color: #006dcc; }
 
 .jumbotron {
   padding: 2rem 1rem;
@@ -3825,31 +3825,31 @@ input[type="button"].btn-block {
     color: #090909; }
 
 .alert-otpappcolor {
-  color: #440513;
-  background-color: #e6ced3;
-  border-color: #dcbac2; }
+  color: #0b192f;
+  background-color: #d0d6de;
+  border-color: #bdc5d1; }
   .alert-otpappcolor hr {
-    border-top-color: #d3a9b3; }
+    border-top-color: #aeb8c7; }
   .alert-otpappcolor .alert-link {
-    color: #140206; }
+    color: #010306; }
 
 .alert-dark-otpappcolor {
-  color: #260008;
-  background-color: #dbcccf;
-  border-color: #ccb8bc; }
+  color: #006585;
+  background-color: #ccf3ff;
+  border-color: #b8eeff; }
   .alert-dark-otpappcolor hr {
-    border-top-color: #c1a9ae; }
+    border-top-color: #9fe8ff; }
   .alert-dark-otpappcolor .alert-link {
-    color: black; }
+    color: #003e52; }
 
 .alert-light-otpappcolor {
-  color: #550718;
-  background-color: #edcfd5;
-  border-color: #e6bbc4; }
+  color: #004785;
+  background-color: #cce7ff;
+  border-color: #b8deff; }
   .alert-light-otpappcolor hr {
-    border-top-color: #dfa8b4; }
+    border-top-color: #9fd2ff; }
   .alert-light-otpappcolor .alert-link {
-    color: #26030b; }
+    color: #002c52; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4037,37 +4037,37 @@ input[type="button"].btn-block {
     border-color: #222222; }
 
 .list-group-item-otpappcolor {
-  color: #440513;
-  background-color: #dcbac2; }
+  color: #0b192f;
+  background-color: #bdc5d1; }
   .list-group-item-otpappcolor.list-group-item-action:hover, .list-group-item-otpappcolor.list-group-item-action:focus {
-    color: #440513;
-    background-color: #d3a9b3; }
+    color: #0b192f;
+    background-color: #aeb8c7; }
   .list-group-item-otpappcolor.list-group-item-action.active {
     color: #fff;
-    background-color: #440513;
-    border-color: #440513; }
+    background-color: #0b192f;
+    border-color: #0b192f; }
 
 .list-group-item-dark-otpappcolor {
-  color: #260008;
-  background-color: #ccb8bc; }
+  color: #006585;
+  background-color: #b8eeff; }
   .list-group-item-dark-otpappcolor.list-group-item-action:hover, .list-group-item-dark-otpappcolor.list-group-item-action:focus {
-    color: #260008;
-    background-color: #c1a9ae; }
+    color: #006585;
+    background-color: #9fe8ff; }
   .list-group-item-dark-otpappcolor.list-group-item-action.active {
     color: #fff;
-    background-color: #260008;
-    border-color: #260008; }
+    background-color: #006585;
+    border-color: #006585; }
 
 .list-group-item-light-otpappcolor {
-  color: #550718;
-  background-color: #e6bbc4; }
+  color: #004785;
+  background-color: #b8deff; }
   .list-group-item-light-otpappcolor.list-group-item-action:hover, .list-group-item-light-otpappcolor.list-group-item-action:focus {
-    color: #550718;
-    background-color: #dfa8b4; }
+    color: #004785;
+    background-color: #9fd2ff; }
   .list-group-item-light-otpappcolor.list-group-item-action.active {
     color: #fff;
-    background-color: #550718;
-    border-color: #550718; }
+    background-color: #004785;
+    border-color: #004785; }
 
 .close {
   float: right;
@@ -4694,28 +4694,28 @@ button.bg-dark:focus {
   background-color: #292929 !important; }
 
 .bg-otpappcolor {
-  background-color: #830A25 !important; }
+  background-color: #15305b !important; }
 
 a.bg-otpappcolor:hover, a.bg-otpappcolor:focus,
 button.bg-otpappcolor:hover,
 button.bg-otpappcolor:focus {
-  background-color: #540618 !important; }
+  background-color: #0b1a32 !important; }
 
 .bg-dark-otpappcolor {
-  background-color: #490010 !important; }
+  background-color: #00c2ff !important; }
 
 a.bg-dark-otpappcolor:hover, a.bg-dark-otpappcolor:focus,
 button.bg-dark-otpappcolor:hover,
 button.bg-dark-otpappcolor:focus {
-  background-color: #160005 !important; }
+  background-color: #009bcc !important; }
 
 .bg-light-otpappcolor {
-  background-color: #A40D2E !important; }
+  background-color: #0088ff !important; }
 
 a.bg-light-otpappcolor:hover, a.bg-light-otpappcolor:focus,
 button.bg-light-otpappcolor:hover,
 button.bg-light-otpappcolor:focus {
-  background-color: #750921 !important; }
+  background-color: #006dcc !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -4778,13 +4778,13 @@ button.bg-light-otpappcolor:focus {
   border-color: #424242 !important; }
 
 .border-otpappcolor {
-  border-color: #830A25 !important; }
+  border-color: #15305b !important; }
 
 .border-dark-otpappcolor {
-  border-color: #490010 !important; }
+  border-color: #00c2ff !important; }
 
 .border-light-otpappcolor {
-  border-color: #A40D2E !important; }
+  border-color: #0088ff !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -6615,22 +6615,22 @@ a.text-dark:hover, a.text-dark:focus {
   color: #292929 !important; }
 
 .text-otpappcolor {
-  color: #830A25 !important; }
+  color: #15305b !important; }
 
 a.text-otpappcolor:hover, a.text-otpappcolor:focus {
-  color: #540618 !important; }
+  color: #0b1a32 !important; }
 
 .text-dark-otpappcolor {
-  color: #490010 !important; }
+  color: #00c2ff !important; }
 
 a.text-dark-otpappcolor:hover, a.text-dark-otpappcolor:focus {
-  color: #160005 !important; }
+  color: #009bcc !important; }
 
 .text-light-otpappcolor {
-  color: #A40D2E !important; }
+  color: #0088ff !important; }
 
 a.text-light-otpappcolor:hover, a.text-light-otpappcolor:focus {
-  color: #750921 !important; }
+  color: #006dcc !important; }
 
 .text-body {
   color: #212529 !important; }
@@ -7519,21 +7519,21 @@ button:focus {
     .btn.btn-dark.btn-link, .btn-dark.btn-link.custom-file-control::before {
       background-color: transparent; }
   .btn.btn-otpappcolor, .btn-otpappcolor.custom-file-control::before {
-    color: #830A25;
+    color: #15305b;
     background-color: transparent;
     border-color: #ccc; }
     .btn.btn-otpappcolor:hover, .btn-otpappcolor.custom-file-control:hover::before {
-      color: #830A25;
+      color: #15305b;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-otpappcolor:focus, .btn-otpappcolor.custom-file-control:focus::before, .btn.btn-otpappcolor.focus, .btn-otpappcolor.focus.custom-file-control::before {
-      color: #830A25;
+      color: #15305b;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-otpappcolor:active, .btn-otpappcolor.custom-file-control:active::before, .btn.btn-otpappcolor.active, .btn-otpappcolor.active.custom-file-control::before,
     .open > .btn.btn-otpappcolor.dropdown-toggle,
     .open > .btn-otpappcolor.dropdown-toggle.custom-file-control::before {
-      color: #830A25;
+      color: #15305b;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
       .btn.btn-otpappcolor:active:hover, .btn-otpappcolor.custom-file-control:active:hover::before, .btn.btn-otpappcolor:active:focus, .btn-otpappcolor.custom-file-control:active:focus::before, .btn.btn-otpappcolor:active.focus, .btn-otpappcolor.custom-file-control:active.focus::before, .btn.btn-otpappcolor.active:hover, .btn-otpappcolor.active.custom-file-control:hover::before, .btn.btn-otpappcolor.active:focus, .btn-otpappcolor.active.custom-file-control:focus::before, .btn.btn-otpappcolor.active.focus, .btn-otpappcolor.active.focus.custom-file-control::before,
@@ -7543,7 +7543,7 @@ button:focus {
       .open > .btn-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
       .open > .btn.btn-otpappcolor.dropdown-toggle.focus,
       .open > .btn-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(153, 153, 153, 0.4);
         border-color: rgba(153, 153, 153, 0.4); }
     .open > .btn.btn-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -7558,21 +7558,21 @@ button:focus {
       background-color: transparent;
       border-color: #ccc; }
     .bg-inverse .btn.btn-otpappcolor, .bg-inverse .btn-otpappcolor.custom-file-control::before {
-      color: #830A25;
+      color: #15305b;
       background-color: transparent;
       border-color: #ccc; }
       .bg-inverse .btn.btn-otpappcolor:hover, .bg-inverse .btn-otpappcolor.custom-file-control:hover::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-otpappcolor:focus, .bg-inverse .btn-otpappcolor.custom-file-control:focus::before, .bg-inverse .btn.btn-otpappcolor.focus, .bg-inverse .btn-otpappcolor.focus.custom-file-control::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-otpappcolor:active, .bg-inverse .btn-otpappcolor.custom-file-control:active::before, .bg-inverse .btn.btn-otpappcolor.active, .bg-inverse .btn-otpappcolor.active.custom-file-control::before,
       .open > .bg-inverse .btn.btn-otpappcolor.dropdown-toggle,
       .open > .bg-inverse .btn-otpappcolor.dropdown-toggle.custom-file-control::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
         .bg-inverse .btn.btn-otpappcolor:active:hover, .bg-inverse .btn-otpappcolor.custom-file-control:active:hover::before, .bg-inverse .btn.btn-otpappcolor:active:focus, .bg-inverse .btn-otpappcolor.custom-file-control:active:focus::before, .bg-inverse .btn.btn-otpappcolor:active.focus, .bg-inverse .btn-otpappcolor.custom-file-control:active.focus::before, .bg-inverse .btn.btn-otpappcolor.active:hover, .bg-inverse .btn-otpappcolor.active.custom-file-control:hover::before, .bg-inverse .btn.btn-otpappcolor.active:focus, .bg-inverse .btn-otpappcolor.active.custom-file-control:focus::before, .bg-inverse .btn.btn-otpappcolor.active.focus, .bg-inverse .btn-otpappcolor.active.focus.custom-file-control::before,
@@ -7582,7 +7582,7 @@ button:focus {
         .open > .bg-inverse .btn-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
         .open > .bg-inverse .btn.btn-otpappcolor.dropdown-toggle.focus,
         .open > .bg-inverse .btn-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-          color: #830A25;
+          color: #15305b;
           background-color: rgba(204, 204, 204, 0.25);
           border-color: rgba(204, 204, 204, 0.25); }
       .open > .bg-inverse .btn.btn-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bg-inverse .btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -7599,21 +7599,21 @@ button:focus {
     .btn.btn-otpappcolor.btn-link, .btn-otpappcolor.btn-link.custom-file-control::before {
       background-color: transparent; }
   .btn.btn-dark-otpappcolor, .btn-dark-otpappcolor.custom-file-control::before {
-    color: #490010;
+    color: #00c2ff;
     background-color: transparent;
     border-color: #ccc; }
     .btn.btn-dark-otpappcolor:hover, .btn-dark-otpappcolor.custom-file-control:hover::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-dark-otpappcolor:focus, .btn-dark-otpappcolor.custom-file-control:focus::before, .btn.btn-dark-otpappcolor.focus, .btn-dark-otpappcolor.focus.custom-file-control::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-dark-otpappcolor:active, .btn-dark-otpappcolor.custom-file-control:active::before, .btn.btn-dark-otpappcolor.active, .btn-dark-otpappcolor.active.custom-file-control::before,
     .open > .btn.btn-dark-otpappcolor.dropdown-toggle,
     .open > .btn-dark-otpappcolor.dropdown-toggle.custom-file-control::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
       .btn.btn-dark-otpappcolor:active:hover, .btn-dark-otpappcolor.custom-file-control:active:hover::before, .btn.btn-dark-otpappcolor:active:focus, .btn-dark-otpappcolor.custom-file-control:active:focus::before, .btn.btn-dark-otpappcolor:active.focus, .btn-dark-otpappcolor.custom-file-control:active.focus::before, .btn.btn-dark-otpappcolor.active:hover, .btn-dark-otpappcolor.active.custom-file-control:hover::before, .btn.btn-dark-otpappcolor.active:focus, .btn-dark-otpappcolor.active.custom-file-control:focus::before, .btn.btn-dark-otpappcolor.active.focus, .btn-dark-otpappcolor.active.focus.custom-file-control::before,
@@ -7623,7 +7623,7 @@ button:focus {
       .open > .btn-dark-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
       .open > .btn.btn-dark-otpappcolor.dropdown-toggle.focus,
       .open > .btn-dark-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(153, 153, 153, 0.4);
         border-color: rgba(153, 153, 153, 0.4); }
     .open > .btn.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -7638,21 +7638,21 @@ button:focus {
       background-color: transparent;
       border-color: #ccc; }
     .bg-inverse .btn.btn-dark-otpappcolor, .bg-inverse .btn-dark-otpappcolor.custom-file-control::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: transparent;
       border-color: #ccc; }
       .bg-inverse .btn.btn-dark-otpappcolor:hover, .bg-inverse .btn-dark-otpappcolor.custom-file-control:hover::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-dark-otpappcolor:focus, .bg-inverse .btn-dark-otpappcolor.custom-file-control:focus::before, .bg-inverse .btn.btn-dark-otpappcolor.focus, .bg-inverse .btn-dark-otpappcolor.focus.custom-file-control::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-dark-otpappcolor:active, .bg-inverse .btn-dark-otpappcolor.custom-file-control:active::before, .bg-inverse .btn.btn-dark-otpappcolor.active, .bg-inverse .btn-dark-otpappcolor.active.custom-file-control::before,
       .open > .bg-inverse .btn.btn-dark-otpappcolor.dropdown-toggle,
       .open > .bg-inverse .btn-dark-otpappcolor.dropdown-toggle.custom-file-control::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
         .bg-inverse .btn.btn-dark-otpappcolor:active:hover, .bg-inverse .btn-dark-otpappcolor.custom-file-control:active:hover::before, .bg-inverse .btn.btn-dark-otpappcolor:active:focus, .bg-inverse .btn-dark-otpappcolor.custom-file-control:active:focus::before, .bg-inverse .btn.btn-dark-otpappcolor:active.focus, .bg-inverse .btn-dark-otpappcolor.custom-file-control:active.focus::before, .bg-inverse .btn.btn-dark-otpappcolor.active:hover, .bg-inverse .btn-dark-otpappcolor.active.custom-file-control:hover::before, .bg-inverse .btn.btn-dark-otpappcolor.active:focus, .bg-inverse .btn-dark-otpappcolor.active.custom-file-control:focus::before, .bg-inverse .btn.btn-dark-otpappcolor.active.focus, .bg-inverse .btn-dark-otpappcolor.active.focus.custom-file-control::before,
@@ -7662,7 +7662,7 @@ button:focus {
         .open > .bg-inverse .btn-dark-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
         .open > .bg-inverse .btn.btn-dark-otpappcolor.dropdown-toggle.focus,
         .open > .bg-inverse .btn-dark-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-          color: #490010;
+          color: #00c2ff;
           background-color: rgba(204, 204, 204, 0.25);
           border-color: rgba(204, 204, 204, 0.25); }
       .open > .bg-inverse .btn.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bg-inverse .btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -7679,21 +7679,21 @@ button:focus {
     .btn.btn-dark-otpappcolor.btn-link, .btn-dark-otpappcolor.btn-link.custom-file-control::before {
       background-color: transparent; }
   .btn.btn-light-otpappcolor, .btn-light-otpappcolor.custom-file-control::before {
-    color: #A40D2E;
+    color: #0088ff;
     background-color: transparent;
     border-color: #ccc; }
     .btn.btn-light-otpappcolor:hover, .btn-light-otpappcolor.custom-file-control:hover::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-light-otpappcolor:focus, .btn-light-otpappcolor.custom-file-control:focus::before, .btn.btn-light-otpappcolor.focus, .btn-light-otpappcolor.focus.custom-file-control::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-light-otpappcolor:active, .btn-light-otpappcolor.custom-file-control:active::before, .btn.btn-light-otpappcolor.active, .btn-light-otpappcolor.active.custom-file-control::before,
     .open > .btn.btn-light-otpappcolor.dropdown-toggle,
     .open > .btn-light-otpappcolor.dropdown-toggle.custom-file-control::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: rgba(153, 153, 153, 0.2);
       border-color: rgba(153, 153, 153, 0.2); }
       .btn.btn-light-otpappcolor:active:hover, .btn-light-otpappcolor.custom-file-control:active:hover::before, .btn.btn-light-otpappcolor:active:focus, .btn-light-otpappcolor.custom-file-control:active:focus::before, .btn.btn-light-otpappcolor:active.focus, .btn-light-otpappcolor.custom-file-control:active.focus::before, .btn.btn-light-otpappcolor.active:hover, .btn-light-otpappcolor.active.custom-file-control:hover::before, .btn.btn-light-otpappcolor.active:focus, .btn-light-otpappcolor.active.custom-file-control:focus::before, .btn.btn-light-otpappcolor.active.focus, .btn-light-otpappcolor.active.focus.custom-file-control::before,
@@ -7703,7 +7703,7 @@ button:focus {
       .open > .btn-light-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
       .open > .btn.btn-light-otpappcolor.dropdown-toggle.focus,
       .open > .btn-light-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(153, 153, 153, 0.4);
         border-color: rgba(153, 153, 153, 0.4); }
     .open > .btn.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -7718,21 +7718,21 @@ button:focus {
       background-color: transparent;
       border-color: #ccc; }
     .bg-inverse .btn.btn-light-otpappcolor, .bg-inverse .btn-light-otpappcolor.custom-file-control::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: transparent;
       border-color: #ccc; }
       .bg-inverse .btn.btn-light-otpappcolor:hover, .bg-inverse .btn-light-otpappcolor.custom-file-control:hover::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-light-otpappcolor:focus, .bg-inverse .btn-light-otpappcolor.custom-file-control:focus::before, .bg-inverse .btn.btn-light-otpappcolor.focus, .bg-inverse .btn-light-otpappcolor.focus.custom-file-control::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-light-otpappcolor:active, .bg-inverse .btn-light-otpappcolor.custom-file-control:active::before, .bg-inverse .btn.btn-light-otpappcolor.active, .bg-inverse .btn-light-otpappcolor.active.custom-file-control::before,
       .open > .bg-inverse .btn.btn-light-otpappcolor.dropdown-toggle,
       .open > .bg-inverse .btn-light-otpappcolor.dropdown-toggle.custom-file-control::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
         .bg-inverse .btn.btn-light-otpappcolor:active:hover, .bg-inverse .btn-light-otpappcolor.custom-file-control:active:hover::before, .bg-inverse .btn.btn-light-otpappcolor:active:focus, .bg-inverse .btn-light-otpappcolor.custom-file-control:active:focus::before, .bg-inverse .btn.btn-light-otpappcolor:active.focus, .bg-inverse .btn-light-otpappcolor.custom-file-control:active.focus::before, .bg-inverse .btn.btn-light-otpappcolor.active:hover, .bg-inverse .btn-light-otpappcolor.active.custom-file-control:hover::before, .bg-inverse .btn.btn-light-otpappcolor.active:focus, .bg-inverse .btn-light-otpappcolor.active.custom-file-control:focus::before, .bg-inverse .btn.btn-light-otpappcolor.active.focus, .bg-inverse .btn-light-otpappcolor.active.focus.custom-file-control::before,
@@ -7742,7 +7742,7 @@ button:focus {
         .open > .bg-inverse .btn-light-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
         .open > .bg-inverse .btn.btn-light-otpappcolor.dropdown-toggle.focus,
         .open > .bg-inverse .btn-light-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-          color: #A40D2E;
+          color: #0088ff;
           background-color: rgba(204, 204, 204, 0.25);
           border-color: rgba(204, 204, 204, 0.25); }
       .open > .bg-inverse .btn.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bg-inverse .btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -8490,22 +8490,22 @@ button:focus {
   .btn-group-raised .btn.btn-otpappcolor,
   .btn-group-raised .btn-otpappcolor.custom-file-control::before {
     color: #fff;
-    background-color: #830A25;
-    border-color: #830A25; }
+    background-color: #15305b;
+    border-color: #15305b; }
     .btn.bmd-btn-fab.btn-otpappcolor:hover, .bmd-btn-fab.btn-otpappcolor.custom-file-control:hover::before, .btn.btn-raised.btn-otpappcolor:hover, .btn-raised.btn-otpappcolor.custom-file-control:hover::before,
     .btn-group-raised .btn.btn-otpappcolor:hover,
     .btn-group-raised .btn-otpappcolor.custom-file-control:hover::before {
       color: #fff;
-      background-color: #700920;
-      border-color: #4a0615; }
+      background-color: #11274a;
+      border-color: #0a1629; }
     .btn.bmd-btn-fab.btn-otpappcolor:focus, .bmd-btn-fab.btn-otpappcolor.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-otpappcolor.focus, .bmd-btn-fab.btn-otpappcolor.focus.custom-file-control::before, .btn.btn-raised.btn-otpappcolor:focus, .btn-raised.btn-otpappcolor.custom-file-control:focus::before, .btn.btn-raised.btn-otpappcolor.focus, .btn-raised.btn-otpappcolor.focus.custom-file-control::before,
     .btn-group-raised .btn.btn-otpappcolor:focus,
     .btn-group-raised .btn-otpappcolor.custom-file-control:focus::before,
     .btn-group-raised .btn.btn-otpappcolor.focus,
     .btn-group-raised .btn-otpappcolor.focus.custom-file-control::before {
       color: #fff;
-      background-color: #700920;
-      border-color: #4a0615; }
+      background-color: #11274a;
+      border-color: #0a1629; }
     .btn.bmd-btn-fab.btn-otpappcolor:active, .bmd-btn-fab.btn-otpappcolor.custom-file-control:active::before, .btn.bmd-btn-fab.btn-otpappcolor.active, .bmd-btn-fab.btn-otpappcolor.active.custom-file-control::before,
     .open > .btn.bmd-btn-fab.btn-otpappcolor.dropdown-toggle,
     .open > .bmd-btn-fab.btn-otpappcolor.dropdown-toggle.custom-file-control::before, .btn.btn-raised.btn-otpappcolor:active, .btn-raised.btn-otpappcolor.custom-file-control:active::before, .btn.btn-raised.btn-otpappcolor.active, .btn-raised.btn-otpappcolor.active.custom-file-control::before,
@@ -8518,8 +8518,8 @@ button:focus {
     .open > .btn-group-raised .btn.btn-otpappcolor.dropdown-toggle,
     .open > .btn-group-raised .btn-otpappcolor.dropdown-toggle.custom-file-control::before {
       color: #fff;
-      background-color: #700920;
-      border-color: #4a0615; }
+      background-color: #11274a;
+      border-color: #0a1629; }
       .btn.bmd-btn-fab.btn-otpappcolor:active:hover, .bmd-btn-fab.btn-otpappcolor.custom-file-control:active:hover::before, .btn.bmd-btn-fab.btn-otpappcolor:active:focus, .bmd-btn-fab.btn-otpappcolor.custom-file-control:active:focus::before, .btn.bmd-btn-fab.btn-otpappcolor:active.focus, .bmd-btn-fab.btn-otpappcolor.custom-file-control:active.focus::before, .btn.bmd-btn-fab.btn-otpappcolor.active:hover, .bmd-btn-fab.btn-otpappcolor.active.custom-file-control:hover::before, .btn.bmd-btn-fab.btn-otpappcolor.active:focus, .bmd-btn-fab.btn-otpappcolor.active.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-otpappcolor.active.focus, .bmd-btn-fab.btn-otpappcolor.active.focus.custom-file-control::before,
       .open > .btn.bmd-btn-fab.btn-otpappcolor.dropdown-toggle:hover,
       .open > .bmd-btn-fab.btn-otpappcolor.dropdown-toggle.custom-file-control:hover::before,
@@ -8552,13 +8552,13 @@ button:focus {
       .open > .btn-group-raised .btn.btn-otpappcolor.dropdown-toggle.focus,
       .open > .btn-group-raised .btn-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
         color: #fff;
-        background-color: #700920;
-        border-color: #0d0104; }
+        background-color: #11274a;
+        border-color: black; }
     .open > .btn.bmd-btn-fab.btn-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bmd-btn-fab.btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before, .open > .btn.btn-raised.btn-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-raised.btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before, .open > .btn-group-raised .btn.btn-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-group-raised .btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
       color: inherit;
-      background-color: #830A25; }
+      background-color: #15305b; }
       .open > .btn.bmd-btn-fab.btn-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .bmd-btn-fab.btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before, .open > .btn.btn-raised.btn-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .btn-raised.btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before, .open > .btn-group-raised .btn.btn-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .btn-group-raised .btn-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before {
-        background-color: #700920; }
+        background-color: #11274a; }
     .btn.bmd-btn-fab.btn-otpappcolor.disabled:focus, .bmd-btn-fab.btn-otpappcolor.disabled.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-otpappcolor.disabled.focus, .bmd-btn-fab.btn-otpappcolor.disabled.focus.custom-file-control::before, .btn.bmd-btn-fab.btn-otpappcolor:disabled:focus, .bmd-btn-fab.btn-otpappcolor.custom-file-control:disabled:focus::before, .btn.bmd-btn-fab.btn-otpappcolor:disabled.focus, .bmd-btn-fab.btn-otpappcolor.custom-file-control:disabled.focus::before, .btn.btn-raised.btn-otpappcolor.disabled:focus, .btn-raised.btn-otpappcolor.disabled.custom-file-control:focus::before, .btn.btn-raised.btn-otpappcolor.disabled.focus, .btn-raised.btn-otpappcolor.disabled.focus.custom-file-control::before, .btn.btn-raised.btn-otpappcolor:disabled:focus, .btn-raised.btn-otpappcolor.custom-file-control:disabled:focus::before, .btn.btn-raised.btn-otpappcolor:disabled.focus, .btn-raised.btn-otpappcolor.custom-file-control:disabled.focus::before,
     .btn-group-raised .btn.btn-otpappcolor.disabled:focus,
     .btn-group-raised .btn-otpappcolor.disabled.custom-file-control:focus::before,
@@ -8568,35 +8568,35 @@ button:focus {
     .btn-group-raised .btn-otpappcolor.custom-file-control:disabled:focus::before,
     .btn-group-raised .btn.btn-otpappcolor:disabled.focus,
     .btn-group-raised .btn-otpappcolor.custom-file-control:disabled.focus::before {
-      background-color: #830A25;
-      border-color: #830A25; }
+      background-color: #15305b;
+      border-color: #15305b; }
     .btn.bmd-btn-fab.btn-otpappcolor.disabled:hover, .bmd-btn-fab.btn-otpappcolor.disabled.custom-file-control:hover::before, .btn.bmd-btn-fab.btn-otpappcolor:disabled:hover, .bmd-btn-fab.btn-otpappcolor.custom-file-control:disabled:hover::before, .btn.btn-raised.btn-otpappcolor.disabled:hover, .btn-raised.btn-otpappcolor.disabled.custom-file-control:hover::before, .btn.btn-raised.btn-otpappcolor:disabled:hover, .btn-raised.btn-otpappcolor.custom-file-control:disabled:hover::before,
     .btn-group-raised .btn.btn-otpappcolor.disabled:hover,
     .btn-group-raised .btn-otpappcolor.disabled.custom-file-control:hover::before,
     .btn-group-raised .btn.btn-otpappcolor:disabled:hover,
     .btn-group-raised .btn-otpappcolor.custom-file-control:disabled:hover::before {
-      background-color: #830A25;
-      border-color: #830A25; }
+      background-color: #15305b;
+      border-color: #15305b; }
   .btn.bmd-btn-fab.btn-dark-otpappcolor, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control::before, .btn.btn-raised.btn-dark-otpappcolor, .btn-raised.btn-dark-otpappcolor.custom-file-control::before,
   .btn-group-raised .btn.btn-dark-otpappcolor,
   .btn-group-raised .btn-dark-otpappcolor.custom-file-control::before {
     color: #fff;
-    background-color: #490010;
-    border-color: #490010; }
+    background-color: #00c2ff;
+    border-color: #00c2ff; }
     .btn.bmd-btn-fab.btn-dark-otpappcolor:hover, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:hover::before, .btn.btn-raised.btn-dark-otpappcolor:hover, .btn-raised.btn-dark-otpappcolor.custom-file-control:hover::before,
     .btn-group-raised .btn.btn-dark-otpappcolor:hover,
     .btn-group-raised .btn-dark-otpappcolor.custom-file-control:hover::before {
       color: #fff;
-      background-color: #35000c;
-      border-color: #0c0003; }
+      background-color: #00b2eb;
+      border-color: #0093c2; }
     .btn.bmd-btn-fab.btn-dark-otpappcolor:focus, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-dark-otpappcolor.focus, .bmd-btn-fab.btn-dark-otpappcolor.focus.custom-file-control::before, .btn.btn-raised.btn-dark-otpappcolor:focus, .btn-raised.btn-dark-otpappcolor.custom-file-control:focus::before, .btn.btn-raised.btn-dark-otpappcolor.focus, .btn-raised.btn-dark-otpappcolor.focus.custom-file-control::before,
     .btn-group-raised .btn.btn-dark-otpappcolor:focus,
     .btn-group-raised .btn-dark-otpappcolor.custom-file-control:focus::before,
     .btn-group-raised .btn.btn-dark-otpappcolor.focus,
     .btn-group-raised .btn-dark-otpappcolor.focus.custom-file-control::before {
       color: #fff;
-      background-color: #35000c;
-      border-color: #0c0003; }
+      background-color: #00b2eb;
+      border-color: #0093c2; }
     .btn.bmd-btn-fab.btn-dark-otpappcolor:active, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:active::before, .btn.bmd-btn-fab.btn-dark-otpappcolor.active, .bmd-btn-fab.btn-dark-otpappcolor.active.custom-file-control::before,
     .open > .btn.bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle,
     .open > .bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle.custom-file-control::before, .btn.btn-raised.btn-dark-otpappcolor:active, .btn-raised.btn-dark-otpappcolor.custom-file-control:active::before, .btn.btn-raised.btn-dark-otpappcolor.active, .btn-raised.btn-dark-otpappcolor.active.custom-file-control::before,
@@ -8609,8 +8609,8 @@ button:focus {
     .open > .btn-group-raised .btn.btn-dark-otpappcolor.dropdown-toggle,
     .open > .btn-group-raised .btn-dark-otpappcolor.dropdown-toggle.custom-file-control::before {
       color: #fff;
-      background-color: #35000c;
-      border-color: #0c0003; }
+      background-color: #00b2eb;
+      border-color: #0093c2; }
       .btn.bmd-btn-fab.btn-dark-otpappcolor:active:hover, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:active:hover::before, .btn.bmd-btn-fab.btn-dark-otpappcolor:active:focus, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:active:focus::before, .btn.bmd-btn-fab.btn-dark-otpappcolor:active.focus, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:active.focus::before, .btn.bmd-btn-fab.btn-dark-otpappcolor.active:hover, .bmd-btn-fab.btn-dark-otpappcolor.active.custom-file-control:hover::before, .btn.bmd-btn-fab.btn-dark-otpappcolor.active:focus, .bmd-btn-fab.btn-dark-otpappcolor.active.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-dark-otpappcolor.active.focus, .bmd-btn-fab.btn-dark-otpappcolor.active.focus.custom-file-control::before,
       .open > .btn.bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle:hover,
       .open > .bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle.custom-file-control:hover::before,
@@ -8643,13 +8643,13 @@ button:focus {
       .open > .btn-group-raised .btn.btn-dark-otpappcolor.dropdown-toggle.focus,
       .open > .btn-group-raised .btn-dark-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
         color: #fff;
-        background-color: #35000c;
-        border-color: black; }
+        background-color: #00b2eb;
+        border-color: #006180; }
     .open > .btn.bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before, .open > .btn.btn-raised.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-raised.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before, .open > .btn-group-raised .btn.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-group-raised .btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
       color: inherit;
-      background-color: #490010; }
+      background-color: #00c2ff; }
       .open > .btn.bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .bmd-btn-fab.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before, .open > .btn.btn-raised.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .btn-raised.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before, .open > .btn-group-raised .btn.btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .btn-group-raised .btn-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before {
-        background-color: #35000c; }
+        background-color: #00b2eb; }
     .btn.bmd-btn-fab.btn-dark-otpappcolor.disabled:focus, .bmd-btn-fab.btn-dark-otpappcolor.disabled.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-dark-otpappcolor.disabled.focus, .bmd-btn-fab.btn-dark-otpappcolor.disabled.focus.custom-file-control::before, .btn.bmd-btn-fab.btn-dark-otpappcolor:disabled:focus, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:disabled:focus::before, .btn.bmd-btn-fab.btn-dark-otpappcolor:disabled.focus, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:disabled.focus::before, .btn.btn-raised.btn-dark-otpappcolor.disabled:focus, .btn-raised.btn-dark-otpappcolor.disabled.custom-file-control:focus::before, .btn.btn-raised.btn-dark-otpappcolor.disabled.focus, .btn-raised.btn-dark-otpappcolor.disabled.focus.custom-file-control::before, .btn.btn-raised.btn-dark-otpappcolor:disabled:focus, .btn-raised.btn-dark-otpappcolor.custom-file-control:disabled:focus::before, .btn.btn-raised.btn-dark-otpappcolor:disabled.focus, .btn-raised.btn-dark-otpappcolor.custom-file-control:disabled.focus::before,
     .btn-group-raised .btn.btn-dark-otpappcolor.disabled:focus,
     .btn-group-raised .btn-dark-otpappcolor.disabled.custom-file-control:focus::before,
@@ -8659,35 +8659,35 @@ button:focus {
     .btn-group-raised .btn-dark-otpappcolor.custom-file-control:disabled:focus::before,
     .btn-group-raised .btn.btn-dark-otpappcolor:disabled.focus,
     .btn-group-raised .btn-dark-otpappcolor.custom-file-control:disabled.focus::before {
-      background-color: #490010;
-      border-color: #490010; }
+      background-color: #00c2ff;
+      border-color: #00c2ff; }
     .btn.bmd-btn-fab.btn-dark-otpappcolor.disabled:hover, .bmd-btn-fab.btn-dark-otpappcolor.disabled.custom-file-control:hover::before, .btn.bmd-btn-fab.btn-dark-otpappcolor:disabled:hover, .bmd-btn-fab.btn-dark-otpappcolor.custom-file-control:disabled:hover::before, .btn.btn-raised.btn-dark-otpappcolor.disabled:hover, .btn-raised.btn-dark-otpappcolor.disabled.custom-file-control:hover::before, .btn.btn-raised.btn-dark-otpappcolor:disabled:hover, .btn-raised.btn-dark-otpappcolor.custom-file-control:disabled:hover::before,
     .btn-group-raised .btn.btn-dark-otpappcolor.disabled:hover,
     .btn-group-raised .btn-dark-otpappcolor.disabled.custom-file-control:hover::before,
     .btn-group-raised .btn.btn-dark-otpappcolor:disabled:hover,
     .btn-group-raised .btn-dark-otpappcolor.custom-file-control:disabled:hover::before {
-      background-color: #490010;
-      border-color: #490010; }
+      background-color: #00c2ff;
+      border-color: #00c2ff; }
   .btn.bmd-btn-fab.btn-light-otpappcolor, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control::before, .btn.btn-raised.btn-light-otpappcolor, .btn-raised.btn-light-otpappcolor.custom-file-control::before,
   .btn-group-raised .btn.btn-light-otpappcolor,
   .btn-group-raised .btn-light-otpappcolor.custom-file-control::before {
     color: #fff;
-    background-color: #A40D2E;
-    border-color: #A40D2E; }
+    background-color: #0088ff;
+    border-color: #0088ff; }
     .btn.bmd-btn-fab.btn-light-otpappcolor:hover, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:hover::before, .btn.btn-raised.btn-light-otpappcolor:hover, .btn-raised.btn-light-otpappcolor.custom-file-control:hover::before,
     .btn-group-raised .btn.btn-light-otpappcolor:hover,
     .btn-group-raised .btn-light-otpappcolor.custom-file-control:hover::before {
       color: #fff;
-      background-color: #910c29;
-      border-color: #6b091e; }
+      background-color: #1492ff;
+      border-color: #0067c2; }
     .btn.bmd-btn-fab.btn-light-otpappcolor:focus, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-light-otpappcolor.focus, .bmd-btn-fab.btn-light-otpappcolor.focus.custom-file-control::before, .btn.btn-raised.btn-light-otpappcolor:focus, .btn-raised.btn-light-otpappcolor.custom-file-control:focus::before, .btn.btn-raised.btn-light-otpappcolor.focus, .btn-raised.btn-light-otpappcolor.focus.custom-file-control::before,
     .btn-group-raised .btn.btn-light-otpappcolor:focus,
     .btn-group-raised .btn-light-otpappcolor.custom-file-control:focus::before,
     .btn-group-raised .btn.btn-light-otpappcolor.focus,
     .btn-group-raised .btn-light-otpappcolor.focus.custom-file-control::before {
       color: #fff;
-      background-color: #910c29;
-      border-color: #6b091e; }
+      background-color: #1492ff;
+      border-color: #0067c2; }
     .btn.bmd-btn-fab.btn-light-otpappcolor:active, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:active::before, .btn.bmd-btn-fab.btn-light-otpappcolor.active, .bmd-btn-fab.btn-light-otpappcolor.active.custom-file-control::before,
     .open > .btn.bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle,
     .open > .bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle.custom-file-control::before, .btn.btn-raised.btn-light-otpappcolor:active, .btn-raised.btn-light-otpappcolor.custom-file-control:active::before, .btn.btn-raised.btn-light-otpappcolor.active, .btn-raised.btn-light-otpappcolor.active.custom-file-control::before,
@@ -8700,8 +8700,8 @@ button:focus {
     .open > .btn-group-raised .btn.btn-light-otpappcolor.dropdown-toggle,
     .open > .btn-group-raised .btn-light-otpappcolor.dropdown-toggle.custom-file-control::before {
       color: #fff;
-      background-color: #910c29;
-      border-color: #6b091e; }
+      background-color: #1492ff;
+      border-color: #0067c2; }
       .btn.bmd-btn-fab.btn-light-otpappcolor:active:hover, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:active:hover::before, .btn.bmd-btn-fab.btn-light-otpappcolor:active:focus, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:active:focus::before, .btn.bmd-btn-fab.btn-light-otpappcolor:active.focus, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:active.focus::before, .btn.bmd-btn-fab.btn-light-otpappcolor.active:hover, .bmd-btn-fab.btn-light-otpappcolor.active.custom-file-control:hover::before, .btn.bmd-btn-fab.btn-light-otpappcolor.active:focus, .bmd-btn-fab.btn-light-otpappcolor.active.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-light-otpappcolor.active.focus, .bmd-btn-fab.btn-light-otpappcolor.active.focus.custom-file-control::before,
       .open > .btn.bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle:hover,
       .open > .bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle.custom-file-control:hover::before,
@@ -8734,13 +8734,13 @@ button:focus {
       .open > .btn-group-raised .btn.btn-light-otpappcolor.dropdown-toggle.focus,
       .open > .btn-group-raised .btn-light-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
         color: #fff;
-        background-color: #910c29;
-        border-color: #2e040d; }
+        background-color: #1492ff;
+        border-color: #004480; }
     .open > .btn.bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before, .open > .btn.btn-raised.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-raised.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before, .open > .btn-group-raised .btn.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-group-raised .btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
       color: inherit;
-      background-color: #A40D2E; }
+      background-color: #0088ff; }
       .open > .btn.bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .bmd-btn-fab.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before, .open > .btn.btn-raised.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .btn-raised.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before, .open > .btn-group-raised .btn.btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon:hover, .open > .btn-group-raised .btn-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control:hover::before {
-        background-color: #910c29; }
+        background-color: #1492ff; }
     .btn.bmd-btn-fab.btn-light-otpappcolor.disabled:focus, .bmd-btn-fab.btn-light-otpappcolor.disabled.custom-file-control:focus::before, .btn.bmd-btn-fab.btn-light-otpappcolor.disabled.focus, .bmd-btn-fab.btn-light-otpappcolor.disabled.focus.custom-file-control::before, .btn.bmd-btn-fab.btn-light-otpappcolor:disabled:focus, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:disabled:focus::before, .btn.bmd-btn-fab.btn-light-otpappcolor:disabled.focus, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:disabled.focus::before, .btn.btn-raised.btn-light-otpappcolor.disabled:focus, .btn-raised.btn-light-otpappcolor.disabled.custom-file-control:focus::before, .btn.btn-raised.btn-light-otpappcolor.disabled.focus, .btn-raised.btn-light-otpappcolor.disabled.focus.custom-file-control::before, .btn.btn-raised.btn-light-otpappcolor:disabled:focus, .btn-raised.btn-light-otpappcolor.custom-file-control:disabled:focus::before, .btn.btn-raised.btn-light-otpappcolor:disabled.focus, .btn-raised.btn-light-otpappcolor.custom-file-control:disabled.focus::before,
     .btn-group-raised .btn.btn-light-otpappcolor.disabled:focus,
     .btn-group-raised .btn-light-otpappcolor.disabled.custom-file-control:focus::before,
@@ -8750,15 +8750,15 @@ button:focus {
     .btn-group-raised .btn-light-otpappcolor.custom-file-control:disabled:focus::before,
     .btn-group-raised .btn.btn-light-otpappcolor:disabled.focus,
     .btn-group-raised .btn-light-otpappcolor.custom-file-control:disabled.focus::before {
-      background-color: #A40D2E;
-      border-color: #A40D2E; }
+      background-color: #0088ff;
+      border-color: #0088ff; }
     .btn.bmd-btn-fab.btn-light-otpappcolor.disabled:hover, .bmd-btn-fab.btn-light-otpappcolor.disabled.custom-file-control:hover::before, .btn.bmd-btn-fab.btn-light-otpappcolor:disabled:hover, .bmd-btn-fab.btn-light-otpappcolor.custom-file-control:disabled:hover::before, .btn.btn-raised.btn-light-otpappcolor.disabled:hover, .btn-raised.btn-light-otpappcolor.disabled.custom-file-control:hover::before, .btn.btn-raised.btn-light-otpappcolor:disabled:hover, .btn-raised.btn-light-otpappcolor.custom-file-control:disabled:hover::before,
     .btn-group-raised .btn.btn-light-otpappcolor.disabled:hover,
     .btn-group-raised .btn-light-otpappcolor.disabled.custom-file-control:hover::before,
     .btn-group-raised .btn.btn-light-otpappcolor:disabled:hover,
     .btn-group-raised .btn-light-otpappcolor.custom-file-control:disabled:hover::before {
-      background-color: #A40D2E;
-      border-color: #A40D2E; }
+      background-color: #0088ff;
+      border-color: #0088ff; }
   .btn.bmd-btn-fab:hover, .bmd-btn-fab.custom-file-control:hover::before, .btn.bmd-btn-fab:focus, .bmd-btn-fab.custom-file-control:focus::before, .btn.btn-raised:hover, .btn-raised.custom-file-control:hover::before, .btn.btn-raised:focus, .btn-raised.custom-file-control:focus::before,
   .btn-group-raised .btn:hover,
   .btn-group-raised .custom-file-control:hover::before,
@@ -9479,23 +9479,23 @@ button:focus {
     border-color: currentColor;
     border-style: solid;
     border-width: 1px;
-    color: #830A25;
+    color: #15305b;
     background-color: transparent;
-    border-color: #830A25; }
+    border-color: #15305b; }
     .btn.btn-outline-otpappcolor:hover, .btn-outline-otpappcolor.custom-file-control:hover::before {
-      color: #830A25;
+      color: #15305b;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #830A25; }
+      border-color: #15305b; }
     .btn.btn-outline-otpappcolor:focus, .btn-outline-otpappcolor.custom-file-control:focus::before, .btn.btn-outline-otpappcolor.focus, .btn-outline-otpappcolor.focus.custom-file-control::before {
-      color: #830A25;
+      color: #15305b;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #830A25; }
+      border-color: #15305b; }
     .btn.btn-outline-otpappcolor:active, .btn-outline-otpappcolor.custom-file-control:active::before, .btn.btn-outline-otpappcolor.active, .btn-outline-otpappcolor.active.custom-file-control::before,
     .open > .btn.btn-outline-otpappcolor.dropdown-toggle,
     .open > .btn-outline-otpappcolor.dropdown-toggle.custom-file-control::before {
-      color: #830A25;
+      color: #15305b;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #830A25; }
+      border-color: #15305b; }
       .btn.btn-outline-otpappcolor:active:hover, .btn-outline-otpappcolor.custom-file-control:active:hover::before, .btn.btn-outline-otpappcolor:active:focus, .btn-outline-otpappcolor.custom-file-control:active:focus::before, .btn.btn-outline-otpappcolor:active.focus, .btn-outline-otpappcolor.custom-file-control:active.focus::before, .btn.btn-outline-otpappcolor.active:hover, .btn-outline-otpappcolor.active.custom-file-control:hover::before, .btn.btn-outline-otpappcolor.active:focus, .btn-outline-otpappcolor.active.custom-file-control:focus::before, .btn.btn-outline-otpappcolor.active.focus, .btn-outline-otpappcolor.active.focus.custom-file-control::before,
       .open > .btn.btn-outline-otpappcolor.dropdown-toggle:hover,
       .open > .btn-outline-otpappcolor.dropdown-toggle.custom-file-control:hover::before,
@@ -9503,9 +9503,9 @@ button:focus {
       .open > .btn-outline-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
       .open > .btn.btn-outline-otpappcolor.dropdown-toggle.focus,
       .open > .btn-outline-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(153, 153, 153, 0.4);
-        border-color: #830A25; }
+        border-color: #15305b; }
     .open > .btn.btn-outline-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-outline-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
       color: inherit;
       background-color: transparent; }
@@ -9513,26 +9513,26 @@ button:focus {
         background-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-outline-otpappcolor.disabled:focus, .btn-outline-otpappcolor.disabled.custom-file-control:focus::before, .btn.btn-outline-otpappcolor.disabled.focus, .btn-outline-otpappcolor.disabled.focus.custom-file-control::before, .btn.btn-outline-otpappcolor:disabled:focus, .btn-outline-otpappcolor.custom-file-control:disabled:focus::before, .btn.btn-outline-otpappcolor:disabled.focus, .btn-outline-otpappcolor.custom-file-control:disabled.focus::before {
       background-color: transparent;
-      border-color: #830A25; }
+      border-color: #15305b; }
     .btn.btn-outline-otpappcolor.disabled:hover, .btn-outline-otpappcolor.disabled.custom-file-control:hover::before, .btn.btn-outline-otpappcolor:disabled:hover, .btn-outline-otpappcolor.custom-file-control:disabled:hover::before {
       background-color: transparent;
-      border-color: #830A25; }
+      border-color: #15305b; }
     .bg-inverse .btn.btn-outline-otpappcolor, .bg-inverse .btn-outline-otpappcolor.custom-file-control::before {
-      color: #830A25;
+      color: #15305b;
       background-color: transparent;
-      border-color: #830A25; }
+      border-color: #15305b; }
       .bg-inverse .btn.btn-outline-otpappcolor:hover, .bg-inverse .btn-outline-otpappcolor.custom-file-control:hover::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-otpappcolor:focus, .bg-inverse .btn-outline-otpappcolor.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-otpappcolor.focus, .bg-inverse .btn-outline-otpappcolor.focus.custom-file-control::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-otpappcolor:active, .bg-inverse .btn-outline-otpappcolor.custom-file-control:active::before, .bg-inverse .btn.btn-outline-otpappcolor.active, .bg-inverse .btn-outline-otpappcolor.active.custom-file-control::before,
       .open > .bg-inverse .btn.btn-outline-otpappcolor.dropdown-toggle,
       .open > .bg-inverse .btn-outline-otpappcolor.dropdown-toggle.custom-file-control::before {
-        color: #830A25;
+        color: #15305b;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
         .bg-inverse .btn.btn-outline-otpappcolor:active:hover, .bg-inverse .btn-outline-otpappcolor.custom-file-control:active:hover::before, .bg-inverse .btn.btn-outline-otpappcolor:active:focus, .bg-inverse .btn-outline-otpappcolor.custom-file-control:active:focus::before, .bg-inverse .btn.btn-outline-otpappcolor:active.focus, .bg-inverse .btn-outline-otpappcolor.custom-file-control:active.focus::before, .bg-inverse .btn.btn-outline-otpappcolor.active:hover, .bg-inverse .btn-outline-otpappcolor.active.custom-file-control:hover::before, .bg-inverse .btn.btn-outline-otpappcolor.active:focus, .bg-inverse .btn-outline-otpappcolor.active.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-otpappcolor.active.focus, .bg-inverse .btn-outline-otpappcolor.active.focus.custom-file-control::before,
@@ -9542,7 +9542,7 @@ button:focus {
         .open > .bg-inverse .btn-outline-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
         .open > .bg-inverse .btn.btn-outline-otpappcolor.dropdown-toggle.focus,
         .open > .bg-inverse .btn-outline-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-          color: #830A25;
+          color: #15305b;
           background-color: rgba(204, 204, 204, 0.25);
           border-color: rgba(204, 204, 204, 0.25); }
       .open > .bg-inverse .btn.btn-outline-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bg-inverse .btn-outline-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -9552,33 +9552,33 @@ button:focus {
           background-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-otpappcolor.disabled:focus, .bg-inverse .btn-outline-otpappcolor.disabled.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-otpappcolor.disabled.focus, .bg-inverse .btn-outline-otpappcolor.disabled.focus.custom-file-control::before, .bg-inverse .btn.btn-outline-otpappcolor:disabled:focus, .bg-inverse .btn-outline-otpappcolor.custom-file-control:disabled:focus::before, .bg-inverse .btn.btn-outline-otpappcolor:disabled.focus, .bg-inverse .btn-outline-otpappcolor.custom-file-control:disabled.focus::before {
         background-color: transparent;
-        border-color: #830A25; }
+        border-color: #15305b; }
       .bg-inverse .btn.btn-outline-otpappcolor.disabled:hover, .bg-inverse .btn-outline-otpappcolor.disabled.custom-file-control:hover::before, .bg-inverse .btn.btn-outline-otpappcolor:disabled:hover, .bg-inverse .btn-outline-otpappcolor.custom-file-control:disabled:hover::before {
         background-color: transparent;
-        border-color: #830A25; }
+        border-color: #15305b; }
     .btn.btn-outline-otpappcolor.btn-link, .btn-outline-otpappcolor.btn-link.custom-file-control::before {
       background-color: transparent; }
   .btn.btn-outline-dark-otpappcolor, .btn-outline-dark-otpappcolor.custom-file-control::before {
     border-color: currentColor;
     border-style: solid;
     border-width: 1px;
-    color: #490010;
+    color: #00c2ff;
     background-color: transparent;
-    border-color: #490010; }
+    border-color: #00c2ff; }
     .btn.btn-outline-dark-otpappcolor:hover, .btn-outline-dark-otpappcolor.custom-file-control:hover::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #490010; }
+      border-color: #00c2ff; }
     .btn.btn-outline-dark-otpappcolor:focus, .btn-outline-dark-otpappcolor.custom-file-control:focus::before, .btn.btn-outline-dark-otpappcolor.focus, .btn-outline-dark-otpappcolor.focus.custom-file-control::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #490010; }
+      border-color: #00c2ff; }
     .btn.btn-outline-dark-otpappcolor:active, .btn-outline-dark-otpappcolor.custom-file-control:active::before, .btn.btn-outline-dark-otpappcolor.active, .btn-outline-dark-otpappcolor.active.custom-file-control::before,
     .open > .btn.btn-outline-dark-otpappcolor.dropdown-toggle,
     .open > .btn-outline-dark-otpappcolor.dropdown-toggle.custom-file-control::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #490010; }
+      border-color: #00c2ff; }
       .btn.btn-outline-dark-otpappcolor:active:hover, .btn-outline-dark-otpappcolor.custom-file-control:active:hover::before, .btn.btn-outline-dark-otpappcolor:active:focus, .btn-outline-dark-otpappcolor.custom-file-control:active:focus::before, .btn.btn-outline-dark-otpappcolor:active.focus, .btn-outline-dark-otpappcolor.custom-file-control:active.focus::before, .btn.btn-outline-dark-otpappcolor.active:hover, .btn-outline-dark-otpappcolor.active.custom-file-control:hover::before, .btn.btn-outline-dark-otpappcolor.active:focus, .btn-outline-dark-otpappcolor.active.custom-file-control:focus::before, .btn.btn-outline-dark-otpappcolor.active.focus, .btn-outline-dark-otpappcolor.active.focus.custom-file-control::before,
       .open > .btn.btn-outline-dark-otpappcolor.dropdown-toggle:hover,
       .open > .btn-outline-dark-otpappcolor.dropdown-toggle.custom-file-control:hover::before,
@@ -9586,9 +9586,9 @@ button:focus {
       .open > .btn-outline-dark-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
       .open > .btn.btn-outline-dark-otpappcolor.dropdown-toggle.focus,
       .open > .btn-outline-dark-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(153, 153, 153, 0.4);
-        border-color: #490010; }
+        border-color: #00c2ff; }
     .open > .btn.btn-outline-dark-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-outline-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
       color: inherit;
       background-color: transparent; }
@@ -9596,26 +9596,26 @@ button:focus {
         background-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-outline-dark-otpappcolor.disabled:focus, .btn-outline-dark-otpappcolor.disabled.custom-file-control:focus::before, .btn.btn-outline-dark-otpappcolor.disabled.focus, .btn-outline-dark-otpappcolor.disabled.focus.custom-file-control::before, .btn.btn-outline-dark-otpappcolor:disabled:focus, .btn-outline-dark-otpappcolor.custom-file-control:disabled:focus::before, .btn.btn-outline-dark-otpappcolor:disabled.focus, .btn-outline-dark-otpappcolor.custom-file-control:disabled.focus::before {
       background-color: transparent;
-      border-color: #490010; }
+      border-color: #00c2ff; }
     .btn.btn-outline-dark-otpappcolor.disabled:hover, .btn-outline-dark-otpappcolor.disabled.custom-file-control:hover::before, .btn.btn-outline-dark-otpappcolor:disabled:hover, .btn-outline-dark-otpappcolor.custom-file-control:disabled:hover::before {
       background-color: transparent;
-      border-color: #490010; }
+      border-color: #00c2ff; }
     .bg-inverse .btn.btn-outline-dark-otpappcolor, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control::before {
-      color: #490010;
+      color: #00c2ff;
       background-color: transparent;
-      border-color: #490010; }
+      border-color: #00c2ff; }
       .bg-inverse .btn.btn-outline-dark-otpappcolor:hover, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:hover::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-dark-otpappcolor:focus, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-dark-otpappcolor.focus, .bg-inverse .btn-outline-dark-otpappcolor.focus.custom-file-control::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-dark-otpappcolor:active, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:active::before, .bg-inverse .btn.btn-outline-dark-otpappcolor.active, .bg-inverse .btn-outline-dark-otpappcolor.active.custom-file-control::before,
       .open > .bg-inverse .btn.btn-outline-dark-otpappcolor.dropdown-toggle,
       .open > .bg-inverse .btn-outline-dark-otpappcolor.dropdown-toggle.custom-file-control::before {
-        color: #490010;
+        color: #00c2ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
         .bg-inverse .btn.btn-outline-dark-otpappcolor:active:hover, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:active:hover::before, .bg-inverse .btn.btn-outline-dark-otpappcolor:active:focus, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:active:focus::before, .bg-inverse .btn.btn-outline-dark-otpappcolor:active.focus, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:active.focus::before, .bg-inverse .btn.btn-outline-dark-otpappcolor.active:hover, .bg-inverse .btn-outline-dark-otpappcolor.active.custom-file-control:hover::before, .bg-inverse .btn.btn-outline-dark-otpappcolor.active:focus, .bg-inverse .btn-outline-dark-otpappcolor.active.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-dark-otpappcolor.active.focus, .bg-inverse .btn-outline-dark-otpappcolor.active.focus.custom-file-control::before,
@@ -9625,7 +9625,7 @@ button:focus {
         .open > .bg-inverse .btn-outline-dark-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
         .open > .bg-inverse .btn.btn-outline-dark-otpappcolor.dropdown-toggle.focus,
         .open > .bg-inverse .btn-outline-dark-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-          color: #490010;
+          color: #00c2ff;
           background-color: rgba(204, 204, 204, 0.25);
           border-color: rgba(204, 204, 204, 0.25); }
       .open > .bg-inverse .btn.btn-outline-dark-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bg-inverse .btn-outline-dark-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -9635,33 +9635,33 @@ button:focus {
           background-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-dark-otpappcolor.disabled:focus, .bg-inverse .btn-outline-dark-otpappcolor.disabled.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-dark-otpappcolor.disabled.focus, .bg-inverse .btn-outline-dark-otpappcolor.disabled.focus.custom-file-control::before, .bg-inverse .btn.btn-outline-dark-otpappcolor:disabled:focus, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:disabled:focus::before, .bg-inverse .btn.btn-outline-dark-otpappcolor:disabled.focus, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:disabled.focus::before {
         background-color: transparent;
-        border-color: #490010; }
+        border-color: #00c2ff; }
       .bg-inverse .btn.btn-outline-dark-otpappcolor.disabled:hover, .bg-inverse .btn-outline-dark-otpappcolor.disabled.custom-file-control:hover::before, .bg-inverse .btn.btn-outline-dark-otpappcolor:disabled:hover, .bg-inverse .btn-outline-dark-otpappcolor.custom-file-control:disabled:hover::before {
         background-color: transparent;
-        border-color: #490010; }
+        border-color: #00c2ff; }
     .btn.btn-outline-dark-otpappcolor.btn-link, .btn-outline-dark-otpappcolor.btn-link.custom-file-control::before {
       background-color: transparent; }
   .btn.btn-outline-light-otpappcolor, .btn-outline-light-otpappcolor.custom-file-control::before {
     border-color: currentColor;
     border-style: solid;
     border-width: 1px;
-    color: #A40D2E;
+    color: #0088ff;
     background-color: transparent;
-    border-color: #A40D2E; }
+    border-color: #0088ff; }
     .btn.btn-outline-light-otpappcolor:hover, .btn-outline-light-otpappcolor.custom-file-control:hover::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #A40D2E; }
+      border-color: #0088ff; }
     .btn.btn-outline-light-otpappcolor:focus, .btn-outline-light-otpappcolor.custom-file-control:focus::before, .btn.btn-outline-light-otpappcolor.focus, .btn-outline-light-otpappcolor.focus.custom-file-control::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #A40D2E; }
+      border-color: #0088ff; }
     .btn.btn-outline-light-otpappcolor:active, .btn-outline-light-otpappcolor.custom-file-control:active::before, .btn.btn-outline-light-otpappcolor.active, .btn-outline-light-otpappcolor.active.custom-file-control::before,
     .open > .btn.btn-outline-light-otpappcolor.dropdown-toggle,
     .open > .btn-outline-light-otpappcolor.dropdown-toggle.custom-file-control::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: rgba(153, 153, 153, 0.2);
-      border-color: #A40D2E; }
+      border-color: #0088ff; }
       .btn.btn-outline-light-otpappcolor:active:hover, .btn-outline-light-otpappcolor.custom-file-control:active:hover::before, .btn.btn-outline-light-otpappcolor:active:focus, .btn-outline-light-otpappcolor.custom-file-control:active:focus::before, .btn.btn-outline-light-otpappcolor:active.focus, .btn-outline-light-otpappcolor.custom-file-control:active.focus::before, .btn.btn-outline-light-otpappcolor.active:hover, .btn-outline-light-otpappcolor.active.custom-file-control:hover::before, .btn.btn-outline-light-otpappcolor.active:focus, .btn-outline-light-otpappcolor.active.custom-file-control:focus::before, .btn.btn-outline-light-otpappcolor.active.focus, .btn-outline-light-otpappcolor.active.focus.custom-file-control::before,
       .open > .btn.btn-outline-light-otpappcolor.dropdown-toggle:hover,
       .open > .btn-outline-light-otpappcolor.dropdown-toggle.custom-file-control:hover::before,
@@ -9669,9 +9669,9 @@ button:focus {
       .open > .btn-outline-light-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
       .open > .btn.btn-outline-light-otpappcolor.dropdown-toggle.focus,
       .open > .btn-outline-light-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(153, 153, 153, 0.4);
-        border-color: #A40D2E; }
+        border-color: #0088ff; }
     .open > .btn.btn-outline-light-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .btn-outline-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
       color: inherit;
       background-color: transparent; }
@@ -9679,26 +9679,26 @@ button:focus {
         background-color: rgba(153, 153, 153, 0.2); }
     .btn.btn-outline-light-otpappcolor.disabled:focus, .btn-outline-light-otpappcolor.disabled.custom-file-control:focus::before, .btn.btn-outline-light-otpappcolor.disabled.focus, .btn-outline-light-otpappcolor.disabled.focus.custom-file-control::before, .btn.btn-outline-light-otpappcolor:disabled:focus, .btn-outline-light-otpappcolor.custom-file-control:disabled:focus::before, .btn.btn-outline-light-otpappcolor:disabled.focus, .btn-outline-light-otpappcolor.custom-file-control:disabled.focus::before {
       background-color: transparent;
-      border-color: #A40D2E; }
+      border-color: #0088ff; }
     .btn.btn-outline-light-otpappcolor.disabled:hover, .btn-outline-light-otpappcolor.disabled.custom-file-control:hover::before, .btn.btn-outline-light-otpappcolor:disabled:hover, .btn-outline-light-otpappcolor.custom-file-control:disabled:hover::before {
       background-color: transparent;
-      border-color: #A40D2E; }
+      border-color: #0088ff; }
     .bg-inverse .btn.btn-outline-light-otpappcolor, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control::before {
-      color: #A40D2E;
+      color: #0088ff;
       background-color: transparent;
-      border-color: #A40D2E; }
+      border-color: #0088ff; }
       .bg-inverse .btn.btn-outline-light-otpappcolor:hover, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:hover::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-light-otpappcolor:focus, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-light-otpappcolor.focus, .bg-inverse .btn-outline-light-otpappcolor.focus.custom-file-control::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-light-otpappcolor:active, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:active::before, .bg-inverse .btn.btn-outline-light-otpappcolor.active, .bg-inverse .btn-outline-light-otpappcolor.active.custom-file-control::before,
       .open > .bg-inverse .btn.btn-outline-light-otpappcolor.dropdown-toggle,
       .open > .bg-inverse .btn-outline-light-otpappcolor.dropdown-toggle.custom-file-control::before {
-        color: #A40D2E;
+        color: #0088ff;
         background-color: rgba(204, 204, 204, 0.15);
         border-color: rgba(204, 204, 204, 0.15); }
         .bg-inverse .btn.btn-outline-light-otpappcolor:active:hover, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:active:hover::before, .bg-inverse .btn.btn-outline-light-otpappcolor:active:focus, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:active:focus::before, .bg-inverse .btn.btn-outline-light-otpappcolor:active.focus, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:active.focus::before, .bg-inverse .btn.btn-outline-light-otpappcolor.active:hover, .bg-inverse .btn-outline-light-otpappcolor.active.custom-file-control:hover::before, .bg-inverse .btn.btn-outline-light-otpappcolor.active:focus, .bg-inverse .btn-outline-light-otpappcolor.active.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-light-otpappcolor.active.focus, .bg-inverse .btn-outline-light-otpappcolor.active.focus.custom-file-control::before,
@@ -9708,7 +9708,7 @@ button:focus {
         .open > .bg-inverse .btn-outline-light-otpappcolor.dropdown-toggle.custom-file-control:focus::before,
         .open > .bg-inverse .btn.btn-outline-light-otpappcolor.dropdown-toggle.focus,
         .open > .bg-inverse .btn-outline-light-otpappcolor.dropdown-toggle.focus.custom-file-control::before {
-          color: #A40D2E;
+          color: #0088ff;
           background-color: rgba(204, 204, 204, 0.25);
           border-color: rgba(204, 204, 204, 0.25); }
       .open > .bg-inverse .btn.btn-outline-light-otpappcolor.dropdown-toggle.bmd-btn-icon, .open > .bg-inverse .btn-outline-light-otpappcolor.dropdown-toggle.bmd-btn-icon.custom-file-control::before {
@@ -9718,10 +9718,10 @@ button:focus {
           background-color: rgba(204, 204, 204, 0.15); }
       .bg-inverse .btn.btn-outline-light-otpappcolor.disabled:focus, .bg-inverse .btn-outline-light-otpappcolor.disabled.custom-file-control:focus::before, .bg-inverse .btn.btn-outline-light-otpappcolor.disabled.focus, .bg-inverse .btn-outline-light-otpappcolor.disabled.focus.custom-file-control::before, .bg-inverse .btn.btn-outline-light-otpappcolor:disabled:focus, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:disabled:focus::before, .bg-inverse .btn.btn-outline-light-otpappcolor:disabled.focus, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:disabled.focus::before {
         background-color: transparent;
-        border-color: #A40D2E; }
+        border-color: #0088ff; }
       .bg-inverse .btn.btn-outline-light-otpappcolor.disabled:hover, .bg-inverse .btn-outline-light-otpappcolor.disabled.custom-file-control:hover::before, .bg-inverse .btn.btn-outline-light-otpappcolor:disabled:hover, .bg-inverse .btn-outline-light-otpappcolor.custom-file-control:disabled:hover::before {
         background-color: transparent;
-        border-color: #A40D2E; }
+        border-color: #0088ff; }
     .btn.btn-outline-light-otpappcolor.btn-link, .btn-outline-light-otpappcolor.btn-link.custom-file-control::before {
       background-color: transparent; }
   .btn.bmd-btn-fab, .bmd-btn-fab.custom-file-control::before, .btn.bmd-btn-icon, .bmd-btn-icon.custom-file-control::before {

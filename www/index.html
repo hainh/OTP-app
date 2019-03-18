@@ -32,15 +32,15 @@
 						</button>
 					</div>
 					<ul class="nav navbar-nav">
-						<li class="nav-item">ZENKY OTP</li>
+						<li class="nav-item">BINBIN OTP</li>
 					</ul>
 				</div>
 			</header>
-			<main class="bmd-layout-content">
+			<main class="bmd-layout-content" style="background-image: url('img/bg.jpg');background-size: cover;">
 				<div class="container-fluid">
 					<div class="page" id="page1">
 						<div class="row" id="otps">
-							<div class="col-md-12">
+							<div class="col-md-6 col-sm-12">
 								<div class="row otp-card-container" id="otp-card-container">
 								</div>
 							</div>
@@ -48,7 +48,7 @@
 					</div>
 					<div class="page" id="page2">
 						<div class="row otp-card-container">
-							<div class="otp-card">
+							<div class="otp-card-confirm">
 								<div class="col-md-12">
 									<form class="form-group">
 										<label for="userOtpCode" class="bmd-label-floating" data-text-localize="ConfirmCode"></label>
@@ -56,7 +56,7 @@
 										<button type="reset" class="close reset-icon" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
-										<span class="form-text text-muted small" data-text-localize="GetCodePrompt"></span>
+										<span class="form-text text-dark-otpappcolor small" data-text-localize="GetCodePrompt"></span>
 									</form>
 									<button class="page-control btn btn-secondary btn-raised" page="#page1" data-text-localize="Back"></button>
 									<button class="btn btn-light-otpappcolor btn-raised float-right" id="sendBtn" data-text-localize="SendCode"></button>

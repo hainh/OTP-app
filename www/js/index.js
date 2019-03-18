@@ -1,4 +1,4 @@
-var serverAddress = localStorage.serverAddress || 'zenkyclub.net';
+var serverAddress = localStorage.serverAddress || 'binbin.club';
 var domainRegex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\.[a-zA-Z]{2,11}?$/i;
 var ipRegex = /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/;
 var getTimeCode = '#getServerTime';
@@ -35,7 +35,7 @@ var app = {
 	},
 	onDeviceReady: function() {
 		if (typeof(cordova) !== 'undefined' && cordova.platformId == 'android') {
-			StatusBar.backgroundColorByHexString("#490010");
+			StatusBar.backgroundColorByHexString("#102749");
 		}
 		app.receivedEvent('deviceready');
 		app.onResume();
@@ -195,7 +195,7 @@ var app = {
 	appendOtpCard: function(username, key) {
 		$('#otp-card-container').append(
 			`<div class="otp-card" id="otp-card-${username}">
-				<div class="col-md-6">
+				<div class="col-md-12 col-sm-12">
 					<button type="button" class="close" delete-for="${username}" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
