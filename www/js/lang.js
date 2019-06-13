@@ -2,9 +2,9 @@ var languageDesObject = {
 	'vi': {
 		'ConfirmCode': 'Mã xác nhận',
 		'Back': 'Quay lại',
-		'SendCode': 'Gửi mã',
-		'NotInputText': 'Bạn chưa nhập mã',
-		'GetCodePrompt': 'Vui lòng đăng nhập vào game, mở trang hồ sơ của bạn, ấn nút REG APP OT và làm theo hướng dẫn để lấy mã xác nhận.',
+		'SendCode': 'Gửi',
+		'NotInputText': 'Vui lòng nhập mã',
+		'GetCodePrompt': 'Vui lòng lấy mã xác nhận trong game để điền vào đây (tìm đến phần cài đặt bảo mật OTP APP), tài khoản của bạn sẽ được cài đặt OTP tự động.',
 		'UserExisted': 'Tài khoản {username} đã tồn tại',
 		'DeleteAccount': 'Xóa tài khoản',
 		'DeleteAccountConfirm': 'Tài khoản này sẽ bị xóa vĩnh viễn và không thể được khôi phục. Nếu bạn thực sự muốn xóa tài khoản này vui lòng nhập lại Tên tài khoản ở đây để xác nhận:',
