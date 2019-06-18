@@ -65,8 +65,13 @@ var app = {
 		$('#sendBtn').on('click', function () {
 			var userOtpCode = $('#userOtpCode').val();
 			if (userOtpCode) {
-				var peer = initPhoton(serverAddress, userOtpCode.toUpperCase())
-				peer.connect();
+				userOtpCode = userOtpCode.toUpperCase();
+				if (userOtpCode.startsWith('AG') && userOtpCode.length === 8) {
+					initRequest(serverAddress, userOtpCode);
+				} else {
+					var peer = initPhoton(serverAddress, userOtpCode.toUpperCase())
+					peer.connect();
+				}
 				$('.loader').fadeIn(100);
 			} else {
 				swal({
@@ -155,14 +160,14 @@ var app = {
 	},
 	updateOtp: function() {
 		var epoch = Math.round(new Date().getTime() / 1000);
-		if (epoch % 30 == 0 || epoch - this.lastUpdateOtp > 30) {
+		// if (epoch % 30 == 0 || epoch - this.lastUpdateOtp > 30) {
 			this.lastUpdateOtp = epoch;
 			for (var i = 0; i < this.data.length; i++) {
 				var account = this.data[i];
 				otp = getOtp(account.key);
 				$('#otp-' + account.username).text(otp);
 			}
-		}
+		// }
 	},
 	addAccount: function(username, secretKey) {
 		var userExisted = this.findIndexOfAccount(username) >= 0;
@@ -440,4 +445,62 @@ var initPhoton = (function() {
 	}
 
 	return initPhoton_;
+})();
+
+var initRequest = (function () {
+	function _initRequest_ (serverAddress, userOtpCode) {
+		var isHttp = serverAddress === 'localhost' || /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/.test(serverAddress);
+		var url = (isHttp ? 'http://' : 'https://') + serverAddress + (isHttp ? ':8080' : ':8443') + '/api/agency/otp/setup/' + userOtpCode;
+		var request = new XMLHttpRequest();
+		request.addEventListener("load", onLoad);
+		request.addEventListener("error", onLoadFailedOrCancel);
+		request.addEventListener("abort", onLoadFailedOrCancel);
+
+		request.open("GET", url);
+		request.send();
+	}
+
+	function onLoad (evt) {
+		$('.loader').fadeOut(100);
+		console.log(evt);
+		var data = JSON.parse(evt.target.responseText);
+		if (data['name']) {
+			app.addAccount(data['name'], data['key']);
+			$(`#otp-card-${data['name']} .close`).click(onCloseClick);
+
+			swal({
+				title: langText('AddAccountSuccess'),
+				icon:'success',
+				button: {
+					className: 'btn btn-success'
+				}
+			}).then(() => {
+				$('.page-control[page="#page1"]').click(); // back to #page1
+			});
+		} else {
+			swal({
+				title: langText('IncorrectCode'),
+				text: langText('GetAgencyCodePrompt'),
+				button: {
+					text: 'OK',
+					className: 'btn btn-info',
+				},
+			});
+		}
+	}
+
+	function onLoadFailedOrCancel (evt) {
+		console.log(evt);
+		$('.loader').fadeOut(100);
+		swal({
+			title: langText('NetworkError'),
+			text: langText('NetworkErrorPromt').replace('{serverAddress}', serverAddress),
+			icon: 'warning',
+			button: {
+				className: 'btn btn-info',
+			}
+		});
+	}
+
+	return _initRequest_;
 })();
